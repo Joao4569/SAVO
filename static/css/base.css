@@ -1,6 +1,23 @@
+/* Colour pallettes */
+#first-pallette {
+  overflow-x: hidden;
+}
+
 /* Navbar */
 #navbar {
   padding: 0;
+}
+
+/* Home */
+
+.paragraph {
+  padding-left: 20% !important;
+  padding-right: 20% !important;
+}
+
+/* Footer */
+.red-bg {
+  background-color: #d9534f;
 }
 
 /* Hero Image */
