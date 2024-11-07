@@ -1,8 +1,28 @@
-#test {
-  color: red !important;
+/* Navbar */
+#navbar {
+  padding: 0;
 }
 
-.font-red {
-  color: red !important;
-  font-weight: bold !important;
+/* Hero Image */
+/*.hero-outer {
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+}*/
+
+/* Media queries */
+
+/* Hero Image */
+/*@media (min-width: 1024px) {*/
+/*.hero-outer {
+  position: relative;
 }
+
+#hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -53%);
+  z-index: -1;
+}
+/*}*/
