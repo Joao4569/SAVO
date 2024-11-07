@@ -38,26 +38,12 @@ a:focus {
   font-size: 2rem;
 }
 
-/* Hero Image */
-/*.hero-outer {
-  height: 600px;
-  width: 100%;
-  overflow: hidden;
-}*/
+@media (max-width: 576px) {
+  .icons {
+    font-size: 1.5rem;
+  }
 
-/* Media queries */
-
-/* Hero Image */
-/*@media (min-width: 1024px) {*/
-/*.hero-outer {
-  position: relative;
+  .footer-text {
+    font-size: 0.8rem;
+  }
 }
-
-#hero {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -53%);
-  z-index: -1;
-}
-/*}*/
