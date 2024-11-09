@@ -1,13 +1,22 @@
 /* Fonts */
 
+/* Roboto regular */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Montserrat semiBold */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
 /* playfair */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+
+/* open sans 300-800 */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap");
 
 /* Raleway */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
 
-/* open sans 300-800 */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap");
+/* Source sans 3 */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap");
 
 .heading-font {
   font-family: "Raleway", sans-serif;
@@ -19,33 +28,30 @@
   font-family: "Open sans", sans-serif;
   overflow-x: hidden;
   color: #333333 !important;
+  background-color: white;
 }
 
 .color-dark-grey {
-  color: #333333 !important;
-}
-
-a:hover {
   color: red !important;
 }
 
-a:focus {
-  background-color: #f2f2f2 !important;
+a:hover {
+  color: white !important;
+  background-color: #333333 !important;
+}
+
+.nav-bg {
+  background-color: #333333 !important;
 }
 
 .active {
   font-weight: 600 !important;
+  color: #f2f2f2 !important;
+  background-color: #333333 !important;
+}
+
+.navbar-toggler-icon {
   color: red !important;
-  background-color: #f2f2f2 !important;
-}
-
-.footer-bg-color {
-  background-color: #f2f2f2;
-}
-
-/* Navbar */
-#navbar {
-  auto-margin: 0;
 }
 
 /* Home */

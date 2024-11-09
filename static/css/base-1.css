@@ -50,6 +50,10 @@ a:hover {
   background-color: red !important;
 }
 
+.navbar-toggler-icon {
+  color: #333333 !important;
+}
+
 /* Home */
 
 .main-content-area {
