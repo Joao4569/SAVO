@@ -22,14 +22,18 @@ a:focus {
 
 /* Navbar */
 #navbar {
-  padding: 0;
+  auto-margin: 0;
 }
 
 /* Home */
 
-.paragraph {
-  padding-left: 20% !important;
-  padding-right: 20% !important;
+.main-content-area {
+  padding: 10% !important;
+  padding: 10% !important;
+}
+
+.auto-margin {
+  margin: auto !important;
 }
 
 /* Footer */
@@ -38,6 +42,7 @@ a:focus {
   font-size: 2rem;
 }
 
+/* Media queries */
 @media (max-width: 576px) {
   .icons {
     font-size: 1rem;
