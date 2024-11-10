@@ -25,7 +25,8 @@
   color: #333333 !important;
 }
 
-a:hover {
+a:hover,
+.btn:hover {
   color: #ff2323 !important;
 }
 
@@ -55,6 +56,14 @@ a:hover {
   margin: auto !important;
 }
 
+.btn {
+  font-family: "Raleway", sans-serif !important;
+  width: 90% !important;
+  background-color: #e0dbdb !important;
+  color: #333333 !important;
+  border: none !important;
+}
+
 /* Footer */
 
 .icons {
@@ -72,6 +81,12 @@ a:hover {
   }
 }
 
+@media (min-width: 576px) {
+  .btn {
+    width: 60% !important;
+  }
+}
+
 @media (max-width: 767px) {
   .icons {
     font-size: 1rem;
@@ -79,5 +94,11 @@ a:hover {
 
   .footer-text {
     font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn {
+    width: 70% !important;
   }
 }

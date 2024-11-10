@@ -71,17 +71,20 @@
                 <!-- Navbar Items -->
                 <ul class="navbar-nav py-1">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
+                    <a
+                      class="nav-link color-dark-grey active"
+                      aria-current="page"
+                      href="#"
                       >Home</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Members</a>
+                    <a class="nav-link color-dark-grey" href="#">Members</a>
                   </li>
                   <!-- Information dropdown -->
                   <li class="nav-item dropdown">
                     <a
-                      class="nav-link dropdown-toggle"
+                      class="nav-link color-dark-grey dropdown-toggle"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -91,35 +94,39 @@
                     </a>
                     <ul class="dropdown-menu nav-bg">
                       <li>
-                        <a class="dropdown-item" href="#"
+                        <a class="dropdown-item color-dark-grey" href="#"
                           >Information for patient owners</a
                         >
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#"
+                        <a class="dropdown-item color-dark-grey" href="#"
                           >Information for breeders</a
                         >
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#"
+                        <a class="dropdown-item color-dark-grey" href="#"
                           >Information for referring veterinarians</a
                         >
                       </li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Events</a>
+                    <a class="nav-link color-dark-grey" href="#">Events</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-disabled="true">links</a>
+                    <a class="nav-link color-dark-grey" aria-disabled="true"
+                      >links</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-disabled="true">Contact</a>
+                    <a class="nav-link color-dark-grey" aria-disabled="true"
+                      >Contact</a
+                    >
                   </li>
                   <!-- Design dropdown -->
                   <li class="nav-item dropdown">
                     <a
-                      class="nav-link dropdown-toggle"
+                      class="nav-link color-dark-grey dropdown-toggle"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -129,26 +136,38 @@
                     </a>
                     <ul class="dropdown-menu nav-bg">
                       <li>
-                        <a class="dropdown-item" href="index.html">Colour 1</a>
+                        <a
+                          class="dropdown-item color-dark-grey"
+                          href="index.html"
+                          >Colour 1</a
+                        >
                       </li>
                       <li>
-                        <a class="dropdown-item" href="index-1.html"
+                        <a
+                          class="dropdown-item color-dark-grey"
+                          href="index-1.html"
                           >Colour 2</a
                         >
                       </li>
                       <li>
-                        <a class="dropdown-item active" href="index-2.html"
+                        <a
+                          class="dropdown-item color-dark-grey active"
+                          href="index-2.html"
                           >Colour 3</a
                         >
                       </li>
                       <li><hr class="dropdown-divider" /></li>
-                      <li><a class="dropdown-item" href="#">Design 1</a></li>
+                      <li>
+                        <a class="dropdown-item color-dark-grey" href="#"
+                          >Design 1</a
+                        >
+                      </li>
                     </ul>
                   </li>
                   <!-- Language dropdown -->
                   <li class="nav-item dropdown ps-md-5">
                     <a
-                      class="nav-link dropdown-toggle"
+                      class="nav-link color-dark-grey dropdown-toggle"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -158,13 +177,13 @@
                     </a>
                     <ul class="dropdown-menu nav-bg">
                       <li>
-                        <a class="dropdown-item" href="#">DE</a>
+                        <a class="dropdown-item color-dark-grey" href="#">DE</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">FR</a>
+                        <a class="dropdown-item color-dark-grey" href="#">FR</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">IT</a>
+                        <a class="dropdown-item color-dark-grey" href="#">IT</a>
                       </li>
                     </ul>
                   </li>
@@ -216,6 +235,15 @@
             We are here to help you and your pet with any eye problems that you
             may have.
           </p>
+          <!-- Buttons -->
+          <div class="row">
+            <div class="col-6 pb-4 text-center my-5">
+              <button type="button" class="btn btn-primary">Members</button>
+            </div>
+            <div class="col-6 pb-4 text-center my-5">
+              <button type="button" class="btn btn-primary">Events</button>
+            </div>
+          </div>
         </div>
         <!-- Image -->
         <div class="col-12 col-lg-6 pt-1 ps-lg-3 order-2 auto-margin">
@@ -241,6 +269,40 @@
             have the knowledge and expertise to provide the best possible care
             for your pet's eyes.
           </p>
+          <!-- Buttons -->
+
+          <div class="row">
+            <div class="col-6 pb-4 text-center my-5">
+              <button
+                type="button"
+                class="btn btn-primary dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Information
+              </button>
+              <ul class="dropdown-menu navbar-text-cst nav-bg">
+                <li>
+                  <a class="dropdown-item color-dark-grey" href="#"
+                    >Information for patient owners</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item color-dark-grey" href="#"
+                    >Information for breeders</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item color-dark-grey" href="#"
+                    >Information for referring veterinarians</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 pb-4 text-center dropdown my-5">
+              <button type="button" class="btn btn-primary">Links</button>
+            </div>
+          </div>
         </div>
         <!-- Image -->
         <div

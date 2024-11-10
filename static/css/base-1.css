@@ -23,7 +23,7 @@
   color: #c71a1a !important;
 }
 
-/* Colour pallettes */
+/* Colour palettes */
 #body-colors-cst {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
@@ -32,11 +32,12 @@
 }
 
 .color-dark-grey {
-  color: black !important;
+  color: #f2f2f2 !important;
 }
 
-a:hover {
-  color: white !important;
+a:hover,
+.btn:hover {
+  color: #333333 !important;
   background-color: #c71a1a !important;
 }
 
@@ -46,7 +47,7 @@ a:hover {
 
 .active {
   font-weight: 600 !important;
-  color: #f2f2f2 !important;
+  color: #333333 !important;
   background-color: #c71a1a !important;
 }
 
@@ -66,6 +67,14 @@ a:hover {
   margin: auto !important;
 }
 
+.btn {
+  font-family: "Raleway", sans-serif !important;
+  width: 90% !important;
+  background-color: #c71a1a !important;
+  color: #f2f2f2 !important;
+  border: none !important;
+}
+
 /* Footer */
 
 .icons {
@@ -83,6 +92,12 @@ a:hover {
   }
 }
 
+@media (min-width: 576px) {
+  .btn {
+    width: 60% !important;
+  }
+}
+
 @media (max-width: 767px) {
   .icons {
     font-size: 1rem;
@@ -90,5 +105,23 @@ a:hover {
 
   .footer-text {
     font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn {
+    width: 70% !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn {
+    width: 60% !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .btn {
+    width: 50% !important;
   }
 }
