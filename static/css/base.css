@@ -29,7 +29,7 @@ a:hover {
   color: red !important;
 }
 
-a:focus {
+.nav-bg {
   background-color: #f2f2f2 !important;
 }
 
@@ -41,11 +41,6 @@ a:focus {
 
 .footer-bg-color {
   background-color: #f2f2f2;
-}
-
-/* Navbar */
-#navbar {
-  auto-margin: 0;
 }
 
 /* Home */
