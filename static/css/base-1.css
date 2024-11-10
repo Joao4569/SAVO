@@ -20,7 +20,7 @@
 
 .heading-font {
   font-family: "Raleway", sans-serif;
-  color: red !important;
+  color: #db0000 !important;
 }
 
 /* Colour pallettes */
@@ -37,17 +37,17 @@
 
 a:hover {
   color: white !important;
-  background-color: red !important;
+  background-color: #db0000 !important;
 }
 
 .nav-bg {
-  background-color: red !important;
+  background-color: #db0000 !important;
 }
 
 .active {
   font-weight: 600 !important;
   color: #f2f2f2 !important;
-  background-color: red !important;
+  background-color: #db0000 !important;
 }
 
 .navbar-toggler-icon {
