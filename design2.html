@@ -38,16 +38,18 @@
     <header class="pt-3 container-fluid">
       <!-- Logo -->
       <div class="row main-content-area">
-        <div class="col-12 col-sm-4 text-center">
+        <div class="col-12 col-md-4 text-center">
           <img
             src="./assets/images/savo_logo_C9_resize_crop.png"
             class="img-fluid"
             alt="SAVO logo"
           />
         </div>
-        <div id="navbar" class="col-12 col-sm-8 nav-bg my-auto">
+
+        <!-- Navbar -->
+        <div id="navbar" class="col-12 col-md-8 nav-bg my-auto">
           <!-- Navbar Collapse -->
-          <nav class="navbar navbar-expand-md nav-bg py-2 navbar-text-cst">
+          <nav class="navbar navbar-expand-xl nav-bg py-2 navbar-text-cst">
             <div class="container-fluid">
               <button
                 class="navbar-toggler"
@@ -172,9 +174,6 @@
           </nav>
         </div>
       </div>
-
-      <!-- Navbar -->
-      <div class="row"></div>
     </header>
 
     <!-- Hero Image -->
@@ -301,7 +300,7 @@
       <div class="row justify-content-evenly">
         <!-- Contact information -->
         <div
-          class="col-6 col-sm-4 ps-4 pt-4 pt-sm-5 order-3 order-sm-4 text-center text-sm-center"
+          class="col-6 col-sm-4 col-lg-3 ps-4 pt-4 pt-sm-4 order-3 order-sm-1 text-start"
         >
           <img
             class="img-fluid"
@@ -315,65 +314,68 @@
         </div>
 
         <!-- Footer navigation 1 -->
-        <div class="col-12 col-sm-6 pt-2 px-auto order-1 navbar-text-cst">
-          <ul class="nav justify-content-evenly justify-content-sm-around">
-            <li class="nav-item text-center">
+        <div
+          class="col-6 col-sm-4 col-lg-3 pt-2 order-1 order-sm-2 navbar-text-cst"
+        >
+          <ul class="row nav">
+            <li class="nav-item">
               <a
-                class="nav-link active color-dark-grey"
+                class="nav-link active color-dark-grey text-start"
                 aria-current="page"
                 href="#"
               >
-                <i class="bi bi-house-fill icons"></i><br />Home&nbsp;&nbsp;
+                Home
               </a>
             </li>
-            <li class="nav-item text-center">
-              <a class="nav-link color-dark-grey p-2" href="#">
-                <i class="bi bi-people-fill icons"></i><br />Members&nbsp;
+            <li class="nav-item">
+              <a class="nav-link color-dark-grey text-start" href="#"
+                >Members
               </a>
             </li>
-            <li class="nav-item text-center">
-              <a class="nav-link color-dark-grey" href="#">
-                <i class="bi bi-info-square-fill icons"></i
-                ><br />&nbsp;Info&nbsp;&nbsp;&nbsp;
-              </a>
+            <li class="nav-item">
+              <a class="nav-link color-dark-grey text-start" href="#">Info </a>
             </li>
           </ul>
         </div>
 
         <!-- Footer navigation 2 -->
         <div
-          class="col-12 col-sm-6 col-md-6 pt-2 px-auto pb-2 order-2 navbar-text-cst"
+          class="col-6 col-sm-4 col-lg-3 pt-2 pb-2 order-2 order-sm-3 navbar-text-cst"
         >
-          <ul class="nav justify-content-evenly justify-content-sm-around">
-            <li class="nav-item text-center">
-              <a class="nav-link color-dark-grey" href="#">
-                <i class="bi bi-calendar-heart-fill icons"></i><br />Events
+          <ul class="row nav">
+            <li class="nav-item">
+              <a class="nav-link color-dark-grey text-start" href="#">
+                Events
               </a>
             </li>
-            <li class="nav-item text-center ps-3">
-              <a class="nav-link color-dark-grey" href="#">
-                <i class="bi bi-link-45deg icons"></i><br />Links
-              </a>
+            <li class="nav-item">
+              <a class="nav-link color-dark-grey text-start" href="#">Links </a>
             </li>
-            <li class="nav-item text-center">
-              <a class="nav-link color-dark-grey" href="#"
-                ><i class="bi bi-envelope-at-fill icons"></i><br />Contact
+            <li class="nav-item">
+              <a class="nav-link color-dark-grey text-start" href="#"
+                >Contact
               </a>
             </li>
           </ul>
         </div>
 
         <!-- Copyright -->
-        <div class="col-12 col-sm-4 order-5 footer-text text-center pt-sm-5">
+        <div class="col-12 col-sm-12 order-5 footer-text text-center">
           <p class="pt-4 pb-2">&copy; 2024 Design and code by J.Rodrigues</p>
         </div>
 
         <!-- Privacy policy -->
         <div
-          class="col-6 col-sm-4 ps-1 pt-1 order-4 order-sm-3 footer-text text-center navbar-text-cst"
+          class="col-6 col-sm-12 col-lg-3 order-4 order-sm-4 footer-text text-start text-sm-center text-lg-start navbar-text-cst"
         >
-          <p class="pt-5">Imprint</p>
-          <p>Privacy Policy</p>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-12">
+              <p class="pt-5 pt-lg-4">Imprint</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-12">
+              <p class="pt-1 pt-sm-5 pt-lg-3">Privacy Policy</p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
