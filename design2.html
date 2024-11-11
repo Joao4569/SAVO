@@ -37,8 +37,8 @@
     <!-- Header -->
     <header class="pt-3 container-fluid">
       <!-- Logo -->
-      <div class="row main-content-area">
-        <div class="col-12 col-md-4 text-center">
+      <div class="row py-2 py-sm-3">
+        <div class="col-12 col-md-4 pb-3 text-center">
           <img
             src="./assets/images/savo_logo_C9_resize_crop.png"
             class="img-fluid"
@@ -176,26 +176,13 @@
       </div>
     </header>
 
-    <!-- Hero Image -->
-    <section>
-      <div class="row">
-        <div class="col">
-          <img
-            class="img-fluid"
-            src="./assets/images/cropped_hero_image_anna-dudkova-urs_y9NwFcc-unsplash.jpg"
-            alt="Hero of a brown and white dog with a ball."
-          />
-        </div>
-      </div>
-    </section>
-
     <!-- Main Content -->
 
     <!-- Who we are -->
     <section class="contanier-fluid main-content-area">
       <div class="row">
         <!-- Text -->
-        <div class="col-12 col-lg-6 pe-lg-3 order-1 auto-margin">
+        <div class="col-12 col-lg-6 pe-lg-3 pb-lg-5 order-1 auto-margin">
           <h1 class="heading-font pt-5">Who are we?</h1>
           <p class="pt-3">
             The Swiss Association of Veterinary Ophthalmologists (SAVO) is a
@@ -227,7 +214,7 @@
           </div>
         </div>
         <!-- Image -->
-        <div class="col-12 col-lg-6 pt-1 ps-lg-3 order-2 auto-margin">
+        <div class="col-12 col-lg-6 pt-1 ps-lg-3 pb-lg-5 order-2 auto-margin">
           <img
             src="./assets/images/ayla-verschueren-nWKMtmbpxQs-unsplash (med).jpg"
             class="img-fluid rounded"
@@ -235,10 +222,13 @@
           />
         </div>
 
+        <!-- Hero image -->
+        <div id="hero-image"></div>
+
         <!-- Why vet opth. -->
         <!-- Text -->
         <div
-          class="col-12 col-lg-6 pt-sm-0 ps-lg-3 auto-margin order-3 order-lg-4"
+          class="col-12 col-lg-6 pt-sm-0 ps-lg-3 pt-lg-5 auto-margin order-3 order-lg-5"
         >
           <h1 class="heading-font pt-5 pt-lg-3">
             Why do animals need specialized eye veterinarians?
@@ -282,9 +272,10 @@
             </div>
           </div>
         </div>
+
         <!-- Image -->
         <div
-          class="col-12 col-lg-6 pt-1 pt-xl-5 pe-lg-3 auto-margin order-4 order-lg-3 pb-5"
+          class="col-12 col-lg-6 pt-1 pt-xl-5 pe-lg-3 pt-lg-5 auto-margin order-4 order-lg-4 pb-5"
         >
           <img
             src="./assets/images/karsten-winegeart-loJL4ijUobg-unsplash.jpg"
@@ -386,5 +377,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Hero image JS -->
+    <script src="./static/js/hero-image.js"></script>
   </body>
 </html>
