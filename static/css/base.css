@@ -59,6 +59,7 @@ a:hover,
 .btn {
   font-family: "Raleway", sans-serif !important;
   width: 90% !important;
+  height: 3rem;
   background-color: #e0dbdb !important;
   color: #333333 !important;
   border: none !important;

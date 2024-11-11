@@ -70,6 +70,7 @@ a:hover,
 .btn {
   font-family: "Raleway", sans-serif !important;
   width: 90% !important;
+  height: 3rem;
   background-color: #c71a1a !important;
   color: #f2f2f2 !important;
   border: none !important;
