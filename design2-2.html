@@ -36,8 +36,8 @@
   <body id="body-colors-cst">
     <!-- Header -->
     <header class="pt-3 container-fluid">
-      <!-- Logo -->
       <div class="row py-2 py-sm-3">
+        <!-- Logo -->
         <div class="col-12 col-md-4 pb-3 text-center">
           <img
             src="./assets/images/savo_logo_C9_resize_crop.png"
@@ -69,17 +69,20 @@
                 <!-- Navbar Items -->
                 <ul class="navbar-nav py-1">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
+                    <a
+                      class="nav-link header-active header-nav"
+                      aria-current="page"
+                      href="#"
                       >Home</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Members</a>
+                    <a class="nav-link header-nav" href="#">Members</a>
                   </li>
                   <!-- Information dropdown -->
                   <li class="nav-item dropdown">
                     <a
-                      class="nav-link dropdown-toggle"
+                      class="nav-link dropdown-toggle header-nav"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -89,35 +92,45 @@
                     </a>
                     <ul class="dropdown-menu nav-bg">
                       <li>
-                        <a class="dropdown-item" href="#"
-                          >Information for patient owners</a
-                        >
+                        <a class="dropdown-item header-nav" href="#"
+                          >Information for patient owners<i
+                            class="bi bi-arrow-right ps-2"
+                          ></i
+                        ></a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#"
-                          >Information for breeders</a
-                        >
+                        <a class="dropdown-item header-nav" href="#"
+                          >Information for breeders<i
+                            class="bi bi-arrow-right ps-2"
+                          ></i
+                        ></a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#"
-                          >Information for referring veterinarians</a
-                        >
+                        <a class="dropdown-item header-nav" href="#"
+                          >Information for referring veterinarians<i
+                            class="bi bi-arrow-right ps-2"
+                          ></i
+                        ></a>
                       </li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Events</a>
+                    <a class="nav-link header-nav" href="#">Events</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-disabled="true">links</a>
+                    <a class="nav-link header-nav" aria-disabled="true"
+                      >links</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-disabled="true">Contact</a>
+                    <a class="nav-link header-nav" aria-disabled="true"
+                      >Contact</a
+                    >
                   </li>
                   <!-- Design dropdown -->
                   <li class="nav-item dropdown">
                     <a
-                      class="nav-link dropdown-toggle"
+                      class="nav-link dropdown-toggle header-nav"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -127,28 +140,36 @@
                     </a>
                     <ul class="dropdown-menu nav-bg">
                       <li>
-                        <a class="dropdown-item" href="design2.html"
-                          >Colour 1</a
-                        >
+                        <a class="dropdown-item header-nav" href="design2.html"
+                          >Colour 1<i class="bi bi-arrow-right ps-2"></i
+                        ></a>
                       </li>
                       <li>
-                        <a class="dropdown-item active" href="design2-1.html"
-                          >Colour 2</a
-                        >
+                        <a
+                          class="dropdown-item header-nav"
+                          href="design2-1.html"
+                          >Colour 2<i class="bi bi-arrow-right ps-2"></i
+                        ></a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">Colour 3</a>
+                        <a
+                          class="dropdown-item active header-nav"
+                          href="design2-2.html"
+                          >Colour 3<i class="bi bi-arrow-right ps-2"></i
+                        ></a>
                       </li>
                       <li><hr class="dropdown-divider" /></li>
                       <li>
-                        <a class="dropdown-item" href="index.html">Design 1</a>
+                        <a class="dropdown-item header-nav" href="index.html"
+                          >Design 1<i class="bi bi-arrow-right ps-2"></i
+                        ></a>
                       </li>
                     </ul>
                   </li>
                   <!-- Language dropdown -->
                   <li class="nav-item dropdown ps-md-5">
                     <a
-                      class="nav-link dropdown-toggle"
+                      class="nav-link dropdown-toggle header-nav"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -156,15 +177,15 @@
                     >
                       EN
                     </a>
-                    <ul class="dropdown-menu nav-bg">
+                    <ul class="dropdown-menu">
                       <li>
-                        <a class="dropdown-item" href="#">DE</a>
+                        <a class="dropdown-item header-nav" href="#">DE</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">FR</a>
+                        <a class="dropdown-item header-nav" href="#">FR</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">IT</a>
+                        <a class="dropdown-item header-nav" href="#">IT</a>
                       </li>
                     </ul>
                   </li>
@@ -206,10 +227,14 @@
           <!-- Buttons -->
           <div class="row">
             <div class="col-6 pb-4 text-center my-5">
-              <button type="button" class="btn btn-primary">Members</button>
+              <button type="button" class="btn btn-primary">
+                Members<i class="bi bi-arrow-right ps-2"></i>
+              </button>
             </div>
             <div class="col-6 pb-4 text-center my-5">
-              <button type="button" class="btn btn-primary">Events</button>
+              <button type="button" class="btn btn-primary">
+                Events<i class="bi bi-arrow-right ps-2"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -254,21 +279,31 @@
               <ul class="dropdown-menu navbar-text-cst nav-bg">
                 <li>
                   <a class="dropdown-item" href="#"
-                    >Information for patient owners</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Information for breeders</a>
+                    >Information for patient owners<i
+                      class="bi bi-arrow-right ps-2"
+                    ></i
+                  ></a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#"
-                    >Information for referring veterinarians</a
-                  >
+                    >Information for breeders<i
+                      class="bi bi-arrow-right ps-2"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Information for referring veterinarians<i
+                      class="bi bi-arrow-right ps-2"
+                    ></i
+                  ></a>
                 </li>
               </ul>
             </div>
             <div class="col-5 pb-4 text-center dropdown my-5">
-              <button type="button" class="btn btn-primary">Links</button>
+              <button type="button" class="btn btn-primary">
+                Links<i class="bi bi-arrow-right ps-2"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -311,7 +346,7 @@
           <ul class="row nav">
             <li class="nav-item">
               <a
-                class="nav-link color-dark-grey text-start active-footer"
+                class="nav-link color-dark-grey text-start active-footer footer-nav"
                 aria-current="page"
                 href="#"
               >
@@ -319,12 +354,14 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link color-dark-grey text-start" href="#"
+              <a class="nav-link color-dark-grey text-start footer-nav" href="#"
                 >Members
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link color-dark-grey text-start" href="#">Info </a>
+              <a class="nav-link color-dark-grey text-start footer-nav" href="#"
+                >Info
+              </a>
             </li>
           </ul>
         </div>
@@ -335,15 +372,17 @@
         >
           <ul class="row nav">
             <li class="nav-item">
-              <a class="nav-link color-dark-grey text-start" href="#">
+              <a class="nav-link color-dark-grey text-star footer-nav" href="#">
                 Events
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link color-dark-grey text-start" href="#">Links </a>
+              <a class="nav-link color-dark-grey text-start footer-nav" href="#"
+                >Links
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link color-dark-grey text-start" href="#"
+              <a class="nav-link color-dark-grey text-start footer-nav" href="#"
                 >Contact
               </a>
             </li>
@@ -352,7 +391,10 @@
 
         <!-- Copyright -->
         <div class="col-12 col-sm-12 order-5 footer-text text-center">
-          <p class="pt-4 pb-2">&copy; 2024 Design and code by J.Rodrigues</p>
+          <p class="pt-4 pb-2">
+            &copy; 2024 Design and code by
+            <span class="footer-nav">J.Rodrigues</span>
+          </p>
         </div>
 
         <!-- Privacy policy -->
@@ -361,10 +403,14 @@
         >
           <div class="row">
             <div class="col-12 col-sm-6 col-lg-12">
-              <p class="pt-5 pt-lg-4">Imprint</p>
+              <p class="pt-5 pt-lg-4">
+                <span class="footer-nav">Imprint</span>
+              </p>
             </div>
             <div class="col-12 col-sm-6 col-lg-12">
-              <p class="pt-1 pt-sm-5 pt-lg-3">Privacy Policy</p>
+              <p class="pt-1 pt-sm-5 pt-lg-3">
+                <span class="footer-nav">Privacy Policy</span>
+              </p>
             </div>
           </div>
         </div>

@@ -26,7 +26,8 @@
 }
 
 a:hover,
-.btn:hover {
+.btn:hover,
+.footer-nav:hover {
   color: #ff2323 !important;
 }
 

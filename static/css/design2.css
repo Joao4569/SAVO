@@ -38,13 +38,17 @@ a:hover,
 .active {
   font-weight: 600 !important;
   color: #ff2323 !important;
-  background-color: #fff6f6 !important;
+  background-color: #e0dbdb !important;
 }
 
 .active-footer {
   font-weight: 600 !important;
   color: #ff2323 !important;
   background-color: #e0dbdb !important;
+}
+
+.active-header {
+  color: #ff2323 !important;
 }
 
 /* Navbar */

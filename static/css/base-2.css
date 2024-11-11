@@ -37,8 +37,12 @@
 
 a:hover,
 .btn:hover {
-  color: #9ade39 !important;
+  color: #25d0bb !important;
   background-color: #f2fedc !important;
+}
+
+.footer-nav:hover {
+  color: #25d0bb !important;
 }
 
 .nav-bg {
@@ -47,7 +51,7 @@ a:hover,
 
 .active {
   font-weight: 600 !important;
-  color: #9ade39 !important;
+  color: #25d0bb !important;
   background-color: #f2fedc !important;
 }
 

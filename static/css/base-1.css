@@ -41,6 +41,10 @@ a:hover,
   background-color: #c71a1a !important;
 }
 
+.footer-nav:hover {
+  color: #c71a1a !important;
+}
+
 .nav-bg {
   background-color: #c71a1a !important;
 }
