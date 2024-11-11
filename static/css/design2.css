@@ -37,12 +37,23 @@ a:hover,
 .active {
   font-weight: 600 !important;
   color: #ff2323 !important;
+  background-color: #fff6f6 !important;
+}
+
+.active-footer {
+  font-weight: 600 !important;
+  color: #ff2323 !important;
   background-color: #e0dbdb !important;
 }
 
 /* Navbar */
 
 .navbar-text-cst {
+  font-family: "Raleway", sans-serif !important;
+  font-size: 1.2rem;
+}
+
+.footer-text-cst {
   font-family: "Raleway", sans-serif !important;
 }
 
@@ -59,6 +70,7 @@ a:hover,
 .btn {
   font-family: "Raleway", sans-serif !important;
   width: 90% !important;
+  height: 3rem;
   background-color: #e0dbdb !important;
   color: #333333 !important;
   border: none !important;
