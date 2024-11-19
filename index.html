@@ -36,22 +36,20 @@
   <body id="body-colors-cst">
     <!-- Header -->
     <header class="pt-3 container-fluid">
-      <!-- Logo -->
-      <div class="row">
-        <div class="text-center">
+      <div class="row py-2 py-sm-3">
+        <!-- Logo -->
+        <div class="col-12 col-md-4 pb-3 text-center">
           <img
-            src="./assets/images/savo_logo_C9_resize_crop.png"
+            src="./assets/images/test_Logo_2.svg"
             class="img-fluid"
             alt="SAVO logo"
           />
         </div>
-      </div>
 
-      <!-- Navbar -->
-      <div class="row">
-        <div id="navbar" class="col nav-bg">
+        <!-- Navbar -->
+        <div id="navbar" class="col-12 col-md-8 my-auto">
           <!-- Navbar Collapse -->
-          <nav class="navbar navbar-expand-md nav-bg py-2 navbar-text-cst">
+          <nav class="navbar navbar-expand-xl py-2 navbar-text-cst">
             <div class="container-fluid">
               <button
                 class="navbar-toggler"
@@ -71,17 +69,20 @@
                 <!-- Navbar Items -->
                 <ul class="navbar-nav py-1">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
+                    <a
+                      class="nav-link active header-nav"
+                      aria-current="page"
+                      href="#"
                       >Home</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Members</a>
+                    <a class="nav-link header-nav" href="#">Members</a>
                   </li>
                   <!-- Information dropdown -->
                   <li class="nav-item dropdown">
                     <a
-                      class="nav-link dropdown-toggle"
+                      class="nav-link dropdown-toggle header-nav"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -89,86 +90,65 @@
                     >
                       Information
                     </a>
-                    <ul class="dropdown-menu nav-bg">
+                    <ul class="dropdown-menu">
                       <li>
-                        <a class="dropdown-item" href="#"
-                          >Information for patient owners</a
-                        >
+                        <a class="dropdown-item header-nav" href="#"
+                          >Information for patient owners<i
+                            class="bi bi-arrow-right ps-2"
+                          ></i
+                        ></a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#"
-                          >Information for breeders</a
-                        >
+                        <a class="dropdown-item header-nav" href="#"
+                          >Information for breeders<i
+                            class="bi bi-arrow-right ps-2"
+                          ></i
+                        ></a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#"
-                          >Information for referring veterinarians</a
-                        >
+                        <a class="dropdown-item header-nav" href="#"
+                          >Information for referring veterinarians<i
+                            class="bi bi-arrow-right ps-2"
+                          ></i
+                        ></a>
                       </li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Events</a>
+                    <a class="nav-link header-nav" href="#">Events</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-disabled="true">links</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-disabled="true">Contact</a>
-                  </li>
-                  <!-- Design dropdown -->
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
+                    <a class="nav-link header-nav" aria-disabled="true"
+                      >links</a
                     >
-                      Design 1
-                    </a>
-                    <ul class="dropdown-menu nav-bg">
-                      <li>
-                        <a class="dropdown-item active" href="#">Colour 1</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="index-1.html"
-                          >Colour 2</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="index-2.html"
-                          >Colour 3</a
-                        >
-                      </li>
-                      <li><hr class="dropdown-divider" /></li>
-                      <li>
-                        <a class="dropdown-item" href="./design2.html"
-                          >Design 2</a
-                        >
-                      </li>
-                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link header-nav" aria-disabled="true"
+                      >Contact</a
+                    >
                   </li>
                   <!-- Language dropdown -->
                   <li class="nav-item dropdown ps-md-5">
                     <a
-                      class="nav-link dropdown-toggle"
+                      class="nav-link dropdown-toggle header-nav"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      EN
+                      DE
                     </a>
-                    <ul class="dropdown-menu nav-bg">
+                    <ul class="dropdown-menu">
                       <li>
-                        <a class="dropdown-item" href="#">DE</a>
+                        <a class="dropdown-item header-nav" href="#">FR</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">FR</a>
+                        <a class="dropdown-item header-nav" href="#">IT</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">IT</a>
+                        <a class="dropdown-item header-nav" href="index_en.html"
+                          >EN</a
+                        >
                       </li>
                     </ul>
                   </li>
@@ -180,26 +160,13 @@
       </div>
     </header>
 
-    <!-- Hero Image -->
-    <section>
-      <div class="row">
-        <div class="col">
-          <img
-            class="img-fluid"
-            src="./assets/images/cropped_hero_image_anna-dudkova-urs_y9NwFcc-unsplash.jpg"
-            alt="Hero of a brown and white dog with a ball."
-          />
-        </div>
-      </div>
-    </section>
-
     <!-- Main Content -->
 
     <!-- Who we are -->
     <section class="contanier-fluid main-content-area">
       <div class="row">
         <!-- Text -->
-        <div class="col-12 col-lg-6 pe-lg-3 order-1 auto-margin">
+        <div class="col-12 col-lg-6 pe-lg-3 pb-lg-5 order-1 auto-margin">
           <h1 class="heading-font pt-5">Who are we?</h1>
           <p class="pt-3">
             The Swiss Association of Veterinary Ophthalmologists (SAVO) is a
@@ -223,15 +190,19 @@
           <!-- Buttons -->
           <div class="row">
             <div class="col-6 pb-4 text-center my-5">
-              <button type="button" class="btn btn-primary">Members</button>
+              <button type="button" class="btn btn-primary">
+                Members<i class="bi bi-arrow-right ps-1 ps-sm-2"></i>
+              </button>
             </div>
             <div class="col-6 pb-4 text-center my-5">
-              <button type="button" class="btn btn-primary">Events</button>
+              <button type="button" class="btn btn-primary">
+                Events<i class="bi bi-arrow-right ps-2"></i>
+              </button>
             </div>
           </div>
         </div>
         <!-- Image -->
-        <div class="col-12 col-lg-6 pt-1 ps-lg-3 order-2 auto-margin">
+        <div class="col-12 col-lg-6 pt-1 ps-lg-3 pb-lg-5 order-2 auto-margin">
           <img
             src="./assets/images/ayla-verschueren-nWKMtmbpxQs-unsplash (med).jpg"
             class="img-fluid rounded"
@@ -239,10 +210,13 @@
           />
         </div>
 
+        <!-- Hero image -->
+        <div id="hero-image"></div>
+
         <!-- Why vet opth. -->
         <!-- Text -->
         <div
-          class="col-12 col-lg-6 pt-sm-0 ps-lg-3 auto-margin order-3 order-lg-4"
+          class="col-12 col-lg-6 pt-sm-0 ps-lg-3 pt-lg-5 auto-margin order-3 order-lg-5"
         >
           <h1 class="heading-font pt-5 pt-lg-3">
             Why do animals need specialized eye veterinarians?
@@ -268,27 +242,38 @@
               <ul class="dropdown-menu navbar-text-cst nav-bg">
                 <li>
                   <a class="dropdown-item" href="#"
-                    >Information for patient owners</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Information for breeders</a>
+                    >Information for patient owners<i
+                      class="bi bi-arrow-right ps-2"
+                    ></i
+                  ></a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#"
-                    >Information for referring veterinarians</a
-                  >
+                    >Information for breeders<i
+                      class="bi bi-arrow-right ps-2"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Information for referring veterinarians<i
+                      class="bi bi-arrow-right ps-2"
+                    ></i
+                  ></a>
                 </li>
               </ul>
             </div>
             <div class="col-5 pb-4 text-center dropdown my-5">
-              <button type="button" class="btn btn-primary">Links</button>
+              <button type="button" class="btn btn-primary">
+                Links<i class="bi bi-arrow-right ps-2"></i>
+              </button>
             </div>
           </div>
         </div>
+
         <!-- Image -->
         <div
-          class="col-12 col-lg-6 pt-1 pt-xl-5 pe-lg-3 auto-margin order-4 order-lg-3 pb-5"
+          class="col-12 col-lg-6 pt-1 pt-xl-5 pe-lg-3 pt-lg-5 auto-margin order-4 order-lg-4 pb-5"
         >
           <img
             src="./assets/images/karsten-winegeart-loJL4ijUobg-unsplash.jpg"
@@ -304,39 +289,41 @@
       <div class="row justify-content-evenly">
         <!-- Contact information -->
         <div
-          class="col-6 col-sm-4 ps-4 pt-4 pt-sm-5 order-3 order-sm-4 text-center text-sm-center"
+          class="col-6 col-sm-4 col-lg-3 ps-4 pt-4 pt-sm-4 order-3 order-sm-1 text-start"
         >
           <img
             class="img-fluid"
-            src="./assets/images/savo_logo_C9_resize_crop (small).png"
+            src="./assets/images/test_logo_small.svg"
             alt="SAVO logo small."
           />
-          <p class="ps-2 pt-2 footer-text navbar-text-cst">
+          <p class="ps-2 pt-2 footer-text footer-text-cst">
             Hundstrasse 214<br />
             8050 Zürich<br />
           </p>
         </div>
 
         <!-- Footer navigation 1 -->
-        <div class="col-12 col-sm-6 pt-2 px-auto order-1 navbar-text-cst">
-          <ul class="nav justify-content-evenly justify-content-sm-around">
-            <li class="nav-item text-center">
+        <div
+          class="col-6 col-sm-4 col-lg-3 pt-4 order-1 order-sm-2 footer-text-cst"
+        >
+          <ul class="row nav">
+            <li class="nav-item">
               <a
-                class="nav-link active color-dark-grey"
+                class="nav-link color-dark-grey text-start active-footer footer-nav"
                 aria-current="page"
                 href="#"
               >
-                <i class="bi bi-house-fill icons"></i><br />Home
+                Home
               </a>
             </li>
-            <li class="nav-item text-center">
-              <a class="nav-link color-dark-grey p-2" href="#">
-                <i class="bi bi-people-fill icons"></i><br />Members
+            <li class="nav-item">
+              <a class="nav-link color-dark-grey text-start footer-nav" href="#"
+                >Members
               </a>
             </li>
-            <li class="nav-item text-center">
-              <a class="nav-link color-dark-grey" href="#">
-                <i class="bi bi-info-square-fill icons"></i><br />Info
+            <li class="nav-item">
+              <a class="nav-link color-dark-grey text-start footer-nav" href="#"
+                >Info
               </a>
             </li>
           </ul>
@@ -344,29 +331,29 @@
 
         <!-- Footer navigation 2 -->
         <div
-          class="col-12 col-sm-6 col-md-6 pt-2 px-auto pb-2 order-2 navbar-text-cst"
+          class="col-6 col-sm-4 col-lg-3 pt-4 pb-2 order-2 order-sm-3 footer-text-cst"
         >
-          <ul class="nav justify-content-evenly justify-content-sm-around">
-            <li class="nav-item text-center">
-              <a class="nav-link color-dark-grey" href="#">
-                <i class="bi bi-calendar-heart-fill icons"></i><br />Events
+          <ul class="row nav">
+            <li class="nav-item">
+              <a class="nav-link color-dark-grey text-star footer-nav" href="#">
+                Events
               </a>
             </li>
-            <li class="nav-item text-center ps-3">
-              <a class="nav-link color-dark-grey" href="#">
-                <i class="bi bi-link-45deg icons"></i><br />Links
+            <li class="nav-item">
+              <a class="nav-link color-dark-grey text-start footer-nav" href="#"
+                >Links
               </a>
             </li>
-            <li class="nav-item text-center">
-              <a class="nav-link color-dark-grey" href="#"
-                ><i class="bi bi-envelope-at-fill icons"></i><br />Contact
+            <li class="nav-item">
+              <a class="nav-link color-dark-grey text-start footer-nav" href="#"
+                >Contact
               </a>
             </li>
           </ul>
         </div>
 
         <!-- Copyright -->
-        <div class="col-12 col-sm-4 order-5 footer-text text-center pt-sm-5">
+        <div class="col-12 col-sm-12 order-5 footer-text text-center">
           <p class="pt-4 pb-2">
             &copy; 2024 Design and code by
             <span class="footer-nav">J.Rodrigues</span>
@@ -375,10 +362,20 @@
 
         <!-- Privacy policy -->
         <div
-          class="col-6 col-sm-4 ps-1 pt-1 order-4 order-sm-3 footer-text text-center navbar-text-cst"
+          class="col-6 col-sm-12 col-lg-3 order-4 pt-lg-3 order-sm-4 footer-text text-start text-sm-center text-lg-start footer-text-cst"
         >
-          <p class="pt-5"><span class="footer-nav">Imprint</span></p>
-          <p><span class="footer-nav">Privacy Policy</span></p>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-12">
+              <p class="pt-5 pt-lg-4">
+                <span class="footer-nav">Imprint</span>
+              </p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-12">
+              <p class="pt-1 pt-sm-5 pt-lg-3">
+                <span class="footer-nav">Privacy Policy</span>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
@@ -389,5 +386,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Hero image JS -->
+    <!--<script src="./static/js/hero-image.js"></script>-->
   </body>
 </html>
