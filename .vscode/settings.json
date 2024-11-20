@@ -15,5 +15,19 @@
   "files.autoSave": "off",
   "workbench.colorTheme": "Visual Studio Dark",
   "terminal.integrated.gpuAcceleration": "canvas",
-  "cSpell.words": ["Anja", "SAVO"]
+  "cSpell.words": [
+    "Anja",
+    "Informationen",
+    "Kontakt",
+    "Medien",
+    "Mitglieder",
+    "SAVO",
+    "Schweizerische",
+    "Tierärzte",
+    "Tierhalter",
+    "überweisende",
+    "Vereinigung",
+    "Veterinärophthalmologen",
+    "Züchter"
+  ]
 }
