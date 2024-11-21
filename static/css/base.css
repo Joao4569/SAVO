@@ -8,8 +8,11 @@
 
 .heading-font {
   font-family: "Montserrat", sans-serif;
-  color: #c71a1a !important;
   font-size: 2.8rem !important;
+}
+
+.red-font {
+  color: #c71a1a !important;
 }
 
 #body-colors-cst {
@@ -19,7 +22,7 @@
   background-color: white;
 }
 
-.color-dark-grey {
+.color-off-white {
   color: #f2f2f2 !important;
 }
 
@@ -49,6 +52,10 @@
 .header-active {
   color: #c71a1a !important;
   background-color: #f2f2f2 !important;
+}
+
+.test-bg {
+  background-color: #333333 !important;
 }
 
 /* Navbar */
