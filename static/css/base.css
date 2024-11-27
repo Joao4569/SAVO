@@ -37,6 +37,7 @@
 .active {
   font-weight: 500 !important;
   color: #c71a1a !important;
+  background-color: white !important;
 }
 
 .active-footer {
