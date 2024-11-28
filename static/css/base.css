@@ -127,6 +127,10 @@
   text-decoration: none !important;
 }
 
+.accordion-icon {
+  font-size: 1.5rem;
+}
+
 /* Footer */
 
 .icons {
