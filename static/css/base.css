@@ -6,7 +6,7 @@
 /* Montserrat 700 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
-.heading-font {
+.page-title-font {
   font-family: "Montserrat", sans-serif;
   font-size: 2.8rem !important;
 }
@@ -15,7 +15,7 @@
   color: #c71a1a !important;
 }
 
-#body-colors-cst {
+#body-colors-custom {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
   color: #333333 !important;
@@ -26,11 +26,12 @@
   color: #f2f2f2 !important;
 }
 
-.btn:hover {
+.btn:hover,
+.footer-nav:hover {
   color: #333333 !important;
 }
 
-.nav-bg {
+.bright-red-bg {
   background-color: #c71a1a !important;
 }
 
@@ -46,10 +47,6 @@
   background-color: #c71a1a !important;
 }
 
-.footer-nav:hover {
-  color: #333333 !important;
-}
-
 .dark-grey-font {
   color: #333333 !important;
 }
@@ -59,8 +56,20 @@
   background-color: #f2f2f2 !important;
 }
 
-.test-bg {
-  background-color: #333333 !important;
+.light-grey-bg {
+  background-color: #474747 !important;
+}
+
+.light-red-bg {
+  background-color: #ffefef;
+}
+
+.text-link {
+  color: #333333 !important;
+}
+
+.text-link:hover {
+  color: #c71a1a !important;
 }
 
 /* Navbar */
@@ -140,7 +149,7 @@
     font-size: 0.8rem;
   }
 
-  .heading-font {
+  .page-title-font {
     font-size: 2.2rem !important;
   }
 }
@@ -166,7 +175,7 @@
     width: 70% !important;
   }
 
-  .heading-font {
+  .page-title-font {
     font-size: 3.5rem !important;
   }
 
