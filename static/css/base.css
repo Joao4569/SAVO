@@ -119,6 +119,10 @@
   height: 0 !important;
 }
 
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
 .accordion-header {
   font-family: "Montserrat", sans-serif !important;
 }
