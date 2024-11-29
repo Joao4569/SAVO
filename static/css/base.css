@@ -135,6 +135,11 @@
   font-size: 1.5rem;
 }
 
+li::marker {
+  color: #c71a1a !important;
+  font-size: 1.5rem;
+}
+
 /* Footer */
 
 .icons {
