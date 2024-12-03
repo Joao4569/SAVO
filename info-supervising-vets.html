@@ -16,7 +16,7 @@
     <!-- Link to CSS -->
     <link rel="stylesheet" href="./static/css/base.css" />
 
-    <title>SAVO Home</title>
+    <title>SAVO Info Tierärzte/Tierärztinnen</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -74,9 +74,9 @@
                   <!-- Home -->
                   <li class="nav-item pe-lg-3 pe-xl-1">
                     <a
-                      class="nav-link active header-nav"
+                      class="nav-link header-nav"
                       aria-current="page"
-                      href="#"
+                      href="./index.html"
                       >Home</a
                     >
                   </li>
@@ -89,9 +89,9 @@
                   </li>
 
                   <!-- Informationen dropdown -->
-                  <li class="nav-item ps-lg-3 ps-xl-2 dropdown dark-grey-font">
+                  <li class="nav-item ps-lg-3 ps-xl-2 dropdown">
                     <a
-                      class="nav-link dropdown-toggle header-nav"
+                      class="nav-link dropdown-toggle header-nav active"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -119,9 +119,7 @@
                         ></a>
                       </li>
                       <li>
-                        <a
-                          class="dropdown-item header-nav"
-                          href="./info-supervising-vets.html"
+                        <a class="dropdown-item header-nav active" href="#"
                           >... für überweisende Tierärzte/Tierärztinnen<i
                             class="bi bi-arrow-right ps-2"
                           ></i
@@ -166,7 +164,7 @@
                       <li>
                         <a
                           class="dropdown-item header-nav"
-                          href="./french/index-fr.html"
+                          href="./french/info-supervising-vets-fr.html"
                           >FR</a
                         >
                       </li>
@@ -189,159 +187,102 @@
     </header>
 
     <!-- Main Content -->
-
-    <!-- Wer sind wir? -->
     <section class="contanier-fluid main-content-area">
-      <div class="row">
-        <!-- Text and buttons -->
-        <div
-          class="col-12 col-xl-6 pe-lg-3 pb-lg-5 order-2 order-xl-1 auto-margin"
-        >
-          <h1 class="page-title-font red-font pt-3 pt-sm-4 pb-lg-4">
-            Wer sind wir?
+      <!-- Title -->
+      <div class="row rounded-top mb-2">
+        <div class="col-12 px-0">
+          <h1 class="page-title-font mb-5 red-font text-center pt-1">
+            Informationen für überweisende Tierärzte/ Tierärztinnen
           </h1>
-          <p class="pt-3">
-            Die Schweizerische Vereinigung für Veterinärophthalmologen
-            &#40;SAVO&#41; ist eine Gruppe von Tierärzten mit Spezialisierung
-            auf Augenheilkunde. Unser Anliegen ist es, die bestmögliche
-            tierärztliche Versorgung von Augenleiden für Ihr Haustier zu bieten
-            und deren Erbkrankheiten zu verhindern. Ähnlich wie beim Menschen,
-            ist es heutzutage in der Tiermedizin üblich, dass Spezialisten sich
-            den teils hochkomplexen Erkrankungen und Therapien bei Augen widmen.
-            Haustierärzte überweisen dementsprechend gewisse Fälle, welche ihre
-            Untersuchungsmöglichkeiten oder Kompetenzen überschreiten. Alle
-            unsere Mitglieder haben eine umfassende Ausbildung in der Diagnose
-            und Behandlung von Augenerkrankungen bei Tieren absolviert &#40;ECVO
-            &ndash; European College for Veterinary Ophthalmologists oder ACVO
-            &#45; American College for Veterinary Ophthalmologists&#41; und
-            bilden sich stets weiter.
-          </p>
-          <p>
-            Wir bieten tierärztliche Behandlungen für alle Spezies an. Unsere
-            Mitglieder sind auf die Betreuung einer Vielzahl von Tierarten
-            spezialisiert, einschließlich Heimtiere, exotische Tiere, Vögel und
-            Nutztiere. Unabhängig davon, ob es sich um Routineuntersuchungen,
-            präventive Maßnahmen oder spezialisierte Behandlungen handelt,
-            gewährleisten wir eine umfassende und professionelle Versorgung für
-            jedes Tier.
-          </p>
-          <p>
-            Wir arbeiten eng mit Ihrem Haustierarzt zusammen, um die
-            bestmögliche Versorgung Ihres Tieres zu gewährleisten.
-          </p>
-          <p>
-            Wir sind da, um Ihnen und Ihrem Tier bei allen auftretenden
-            Augenproblemen zu helfen.
-          </p>
+        </div>
+      </div>
 
-          <!-- Buttons -->
-          <div class="row">
-            <!-- Mitglieder -->
-            <div
-              class="col-12 col-md-6 pt-5 pb-3 pb-sm-0 pb-md-3 text-center my-2 my-sm-3 g-5"
-            >
-              <button
-                type="button"
-                class="btn btn-primary"
-                onclick="window.location.href='./members.html';"
+      <!-- Info Accordion -->
+      <div class="row mt-3">
+        <div class="col-12">
+          <div class="accordion" id="accordion">
+            <!-- Accordion Item 1 -->
+            <div class="accordion-item testing-two mt-3">
+              <!-- Title/Button -->
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button color-off-white light-grey-bg"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <div class="col-11">
+                    <h5 class="mb-0">Notfallbehandlungen</h5>
+                  </div>
+                  <div class="testing col-1">
+                    <i
+                      class="fa-solid fa-circle-chevron-down accordion-icon"
+                    ></i>
+                  </div>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion-1"
               >
-                Mitglieder<i class="bi bi-arrow-right ps-2"></i>
-              </button>
-            </div>
-
-            <!-- Kontakt -->
-            <div
-              class="col-12 col-md-6 pb-3 pt-md-5 text-center my-2 my-md-3 g-5"
-            >
-              <button type="button" class="btn btn-primary">
-                Kontakt<i class="bi bi-arrow-right ps-2"></i>
-              </button>
+                <!-- Accordian content -->
+                <div class="accordion-body light-red-bg">
+                  <p>
+                    <i class="fa-solid fa-caret-right pe-2"></i>
+                    <span class="red-font accordion-link">Analgesie: </span>
+                    perorale oder parenterale Verabreichung von NSAIDs oder
+                    Opioiden bei Schmerzen
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-caret-right pe-2"></i>
+                    Anlegen eines
+                    <span class="red-font accordion-link"> Halskragens </span>
+                    , um weitere Schäden, insbesondere durch das Tier selbst, zu
+                    verhindern.
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-caret-right pe-2"></i>
+                    <span class="red-font accordion-link"
+                      >Befeuchtung der Augenoberfläche
+                    </span>
+                    mit Tränenersatzmitteln oder einer NaCl-Lösung.
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-caret-right pe-2"></i>
+                    <span class="red-font accordion-link"
+                      >Verletzungen der Augenlider:
+                    </span>
+                    sollten so schnell wie möglich chirurgisch behandelt werden,
+                    da sich die Narbenbildung negativ auf den Tränenfilm und
+                    damit auf die Augenoberfläche auswirken kann.
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-caret-right pe-2"></i>
+                    <span class="red-font accordion-link"
+                      >Perforierende Hornhautverletzungen:
+                    </span>
+                    sollten so schnell wie möglich mikrochirurgisch behandelt
+                    werden. Eine durch den Abfluss des Kammerwassers verursachte
+                    Hypotonie kann eine Netzhautablösung und anderen
+                    Komplikationen verursachen, die bis zur Erblindung führen
+                    können. Für die medikamentelle Erstversorgung kontaktieren
+                  </p>
+                  <p class="mb-0">
+                    <i class="fa-solid fa-caret-right pe-2"></i>
+                    <span class="red-font accordion-link">Bulbusprolaps: </span>
+                    sollte so schnell wie möglich durch einen chirurgischen
+                    Eingriff (Reposition und Tarsorraphie) behandelt werden. In
+                    der Zwischenzeit ist eine hochfrequente Befeuchtung der
+                    Hornhaut erforderlich.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- Image -->
-        <div
-          class="col-12 col-xl-6 pt-1 pb-3 pb-sm-0 ps-lg-3 pb-lg-5 order-1 order-xl-2 auto-margin"
-        >
-          <img
-            src="./assets/images/PF_OPTH_ECVO_KatVoelter_POS-001 (1).jpg"
-            class="img-fluid rounded"
-            alt="..."
-          />
-        </div>
-
-        <!-- Hero image -->
-        <!-- <div id="hero-image"></div> -->
-
-        <!-- Why vet opth. -->
-        <!-- Text -->
-        <!--<div
-          class="col-12 col-lg-6 pt-sm-0 ps-lg-3 pt-lg-5 auto-margin order-3 order-lg-5"
-        >
-          <h1 class="page-title-font red-font pt-5 pt-lg-3">
-            Why do animals need specialized eye veterinarians?
-          </h1>
-          <p class="pt-3">
-            Animals, like humans, can suffer from a variety of eye problems that
-            require specialized care. Veterinary ophthalmologists are trained to
-            diagnose and treat a wide range of eye diseases in animals. They
-            have the knowledge and expertise to provide the best possible care
-            for your pet's eyes.
-          </p>-->
-        <!-- Buttons -->
-        <!--<div class="row">
-            <div class="col-7 pb-4 text-center my-5">
-              <button
-                type="button"
-                class="btn btn-primary dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Information
-              </button>
-              <ul class="dropdown-menu navbar-text-cst bright-red-bg">
-                <li>
-                  <a class="dropdown-item" href="#"
-                    >Information for patient owners<i
-                      class="bi bi-arrow-right ps-2"
-                    ></i
-                  ></a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#"
-                    >Information for breeders<i
-                      class="bi bi-arrow-right ps-2"
-                    ></i
-                  ></a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#"
-                    >Information for referring veterinarians<i
-                      class="bi bi-arrow-right ps-2"
-                    ></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-5 pb-4 text-center dropdown my-5">
-              <button type="button" class="btn btn-primary">
-                Links<i class="bi bi-arrow-right ps-2"></i>
-              </button>
-            </div>
-          </div>
-        </div>-->
-
-        <!-- Image -->
-        <!-- <div
-          class="col-12 col-lg-6 pt-1 pt-xl-5 pe-lg-3 pt-lg-5 auto-margin order-4 order-lg-4 pb-5"
-        >
-          <img
-            src="./assets/images/karsten-winegeart-loJL4ijUobg-unsplash.jpg"
-            class="img-fluid rounded"
-            alt="..."
-          />
-        </div> -->
       </div>
     </section>
 
@@ -368,9 +309,9 @@
             <!-- Home -->
             <li class="nav-item">
               <a
-                class="nav-link color-off-white text-start active-footer footer-nav"
+                class="nav-link color-off-white text-start footer-nav"
                 aria-current="page"
-                href="#"
+                href="./index.html"
               >
                 Home
               </a>
@@ -388,7 +329,7 @@
             <!-- Informationen dropdown -->
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle color-off-white text-start footer-nav"
+                class="nav-link dropdown-toggle color-off-white text-start footer-nav active-footer"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -398,17 +339,12 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-<<<<<<< HEAD
                   <a
                     class="dropdown-item header-nav"
                     href="./info-pet-owner.html"
-                    >... für Tierhalter<i class="bi bi-arrow-right ps-2"></i
-=======
-                  <a class="dropdown-item header-nav" href="#"
                     >... für Tierhalter/innen<i
                       class="bi bi-arrow-right ps-2"
                     ></i
->>>>>>> info-breeders
                   ></a>
                 </li>
                 <li>
@@ -419,9 +355,7 @@
                   ></a>
                 </li>
                 <li>
-                  <a
-                    class="dropdown-item header-nav"
-                    href="./info-supervising-vets.html"
+                  <a class="dropdown-item header-nav active" href="#"
                     >... für überweisende Tierärzte/Tierärztinnen<i
                       class="bi bi-arrow-right ps-2"
                     ></i
@@ -489,5 +423,14 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/e26a309e14.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom JS -->
+    <script src="./static/js/accordion-button-reaction.js"></script>
   </body>
 </html>
