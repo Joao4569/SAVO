@@ -31,6 +31,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+
+    <!-- Email.js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "U18gLSQ39OJUcKKIk",
+        });
+      })();
+    </script>
   </head>
 
   <body id="body-colors-custom">
@@ -191,8 +204,52 @@
     <!-- Main Content -->
 
     <!-- Contact Form -->
-    <section class="contanier-fluid main-content-area">
-      <div class="row"></div>
+    <section class="contanier-fluid main-content-area px-5">
+      <div class="row">
+        <form id="contact-form">
+          <!-- Name -->
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              id="name"
+              aria-describedby="nameHelp"
+            />
+          </div>
+
+          <!-- Message -->
+          <div class="mb-3">
+            <label for="message" class="form-label">Message:</label>
+            <textarea
+              rows="5"
+              name="message"
+              id="message"
+              class="form-control"
+              placeholder="Your message here...."
+            ></textarea>
+          </div>
+
+          <!-- Reply to: -->
+          <div class="mb-3">
+            <label for="emailaddress" class="form-label">Your email:</label>
+            <input
+              type="text"
+              class="form-control"
+              name="emailaddress"
+              id="emailaddress"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+          <button id="send-contact" type="submit" class="btn btn-primary">
+            Submit
+          </button>
+        </form>
+      </div>
     </section>
 
     <!-- Footer -->
@@ -336,5 +393,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Custom JS -->
+    <script src="./static/js/email-js-send-form.js"></script>
   </body>
 </html>
