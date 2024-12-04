@@ -219,9 +219,40 @@
             />
           </div>
 
+          <!-- Email Address -->
+          <div class="mb-3">
+            <label for="emailaddress" class="form-label">Email</label>
+            <input
+              type="text"
+              class="form-control"
+              name="emailaddress"
+              id="emailaddress"
+              aria-describedby="emailHelp"
+              required
+            />
+            <div id="emailHelp" class="form-text dark-grey-font">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+
+          <!-- Organization -->
+          <div class="mb-3">
+            <label for="org" class="form-label"
+              >Organization<span class="ps-1 red-font pe-5">*</span></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              name="org"
+              id="org"
+              aria-describedby="orgHelp"
+              placeholder="If you are part of one..."
+            />
+          </div>
+
           <!-- Message -->
           <div class="mb-3">
-            <label for="message" class="form-label">Message:</label>
+            <label for="message" class="form-label">Message</label>
             <textarea
               rows="5"
               name="message"
@@ -231,20 +262,7 @@
             ></textarea>
           </div>
 
-          <!-- Reply to: -->
-          <div class="mb-3">
-            <label for="emailaddress" class="form-label">Your email:</label>
-            <input
-              type="text"
-              class="form-control"
-              name="emailaddress"
-              id="emailaddress"
-              aria-describedby="emailHelp"
-            />
-            <div id="emailHelp" class="form-text">
-              We'll never share your email with anyone else.
-            </div>
-          </div>
+          <!-- Submit button -->
           <button id="send-contact" type="submit" class="btn btn-primary">
             Submit
           </button>

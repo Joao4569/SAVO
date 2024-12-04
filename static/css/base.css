@@ -124,7 +124,8 @@
 }
 
 .accordion-header,
-.accordion-link {
+.accordion-link,
+label {
   font-family: "Montserrat", sans-serif !important;
 }
 
