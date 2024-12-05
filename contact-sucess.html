@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="de">
   <head>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta charset="UTF-8" />
@@ -14,9 +14,9 @@
       content="SAVO, Savo, Die Schweizerische Vereinigung für Veterinärophthalmologen, Swiss Association of Veterinary Ophthalmologists, Swiss Veterinary Ophthalmologists, Veterinary Ophthalmologist Switzerland"
     />
     <!-- Link to CSS -->
-    <link rel="stylesheet" href="../static/css/base.css" />
+    <link rel="stylesheet" href="./static/css/base.css" />
 
-    <title>SAVO Info les vétérinaires référents</title>
+    <title>SAVO Kontakt</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -31,6 +31,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+
+    <!-- Email.js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "U18gLSQ39OJUcKKIk",
+        });
+      })();
+    </script>
   </head>
 
   <body id="body-colors-custom">
@@ -40,7 +53,7 @@
         <!-- Logo -->
         <div class="col-12 col-md-12 col-xl-5 pb-3 ps-md-5 ps-xl-0 text-center">
           <img
-            src="..\assets\images\test_logo_3_ai.svg"
+            src=".\assets\images\test_logo_3_ai.svg"
             class="img-fluid"
             alt="SAVO logo"
           />
@@ -76,35 +89,35 @@
                     <a
                       class="nav-link header-nav"
                       aria-current="page"
-                      href="./index-fr.html"
+                      href="./index.html"
                       >Home</a
                     >
                   </li>
 
                   <!-- Mitglieder -->
                   <li class="nav-item ps-lg-3 ps-xl-2">
-                    <a class="nav-link header-nav" href="./members-fr.html"
-                      >Membres</a
+                    <a class="nav-link header-nav" href="./members.html"
+                      >Mitglieder</a
                     >
                   </li>
 
                   <!-- Informationen dropdown -->
-                  <li class="nav-item ps-lg-3 ps-xl-2 dropdown">
+                  <li class="nav-item ps-lg-3 ps-xl-2 dropdown dark-grey-font">
                     <a
-                      class="nav-link dropdown-toggle header-nav active"
+                      class="nav-link dropdown-toggle header-nav"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      Informations
+                      Informationen
                     </a>
                     <ul class="dropdown-menu">
                       <li>
                         <a
                           class="dropdown-item header-nav"
-                          href="./info-pet-owner-fr.html"
-                          >... pour les propriétaires d'animaux<i
+                          href="./info-pet-owner.html"
+                          >... für Tierhalter/innen<i
                             class="bi bi-arrow-right ps-2"
                           ></i
                         ></a>
@@ -112,15 +125,17 @@
                       <li>
                         <a
                           class="dropdown-item header-nav"
-                          href="./info-breeders-fr.html"
-                          >... pour les éleveurs<i
+                          href="./info-breeders.html"
+                          >... für Züchter/innen<i
                             class="bi bi-arrow-right ps-2"
                           ></i
                         ></a>
                       </li>
                       <li>
-                        <a class="dropdown-item header-nav active" href="#"
-                          >... pour les vétérinaires référents<i
+                        <a
+                          class="dropdown-item header-nav"
+                          href="./info-supervising-vets.html"
+                          >... für überweisende Tierärzte/Tierärztinnen<i
                             class="bi bi-arrow-right ps-2"
                           ></i
                         ></a>
@@ -131,21 +146,21 @@
                   <!-- Events & Medien -->
                   <li class="nav-item ps-lg-3 ps-xl-2">
                     <a class="nav-link header-nav" href="#"
-                      >Events &amp; Médias</a
+                      >Events &amp; Medien</a
                     >
                   </li>
 
                   <!-- Links -->
                   <li class="nav-item ps-lg-3 ps-xl-2">
                     <a class="nav-link header-nav" aria-disabled="true"
-                      >Liens</a
+                      >Links</a
                     >
                   </li>
 
                   <!-- Kontakt -->
                   <li class="nav-item ps-lg-3 ps-xl-2">
-                    <a class="nav-link header-nav" aria-disabled="true"
-                      >Contact</a
+                    <a class="nav-link header-nav active" aria-disabled="true"
+                      >Kontakt</a
                     >
                   </li>
 
@@ -158,14 +173,14 @@
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      FR
+                      DE
                     </a>
                     <ul class="dropdown-menu">
                       <li>
                         <a
                           class="dropdown-item header-nav"
-                          href="../info-supervising-vets.html"
-                          >DE</a
+                          href="./french/index-fr.html"
+                          >FR</a
                         >
                       </li>
                       <li>
@@ -187,99 +202,91 @@
     </header>
 
     <!-- Main Content -->
-    <section class="contanier-fluid main-content-area">
+    <section class="contanier-fluid main-content-area px-5">
       <!-- Title -->
       <div class="row rounded-top mb-2">
         <div class="col-12 px-0">
           <h1 class="page-title-font mb-5 red-font text-center pt-1">
-            Informations pour les vétérinaires référents
+            Kontakt
           </h1>
         </div>
       </div>
 
-      <!-- Info Accordion -->
-      <div class="row mt-3">
-        <div class="col-12">
-          <div class="accordion" id="accordion">
-            <!-- Accordion Item 1 -->
-            <div class="accordion-item testing-two mt-3">
-              <!-- Title/Button -->
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button color-off-white light-grey-bg"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  <div class="col-11">
-                    <h5 class="mb-0">Traitements d'urgence</h5>
-                  </div>
-                  <div class="testing col-1">
-                    <i class="fa-solid fa-circle-chevron-up accordion-icon"></i>
-                  </div>
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse show"
-                data-bs-parent="#accordion-1"
-              >
-                <!-- Accordian content -->
-                <div class="accordion-body light-red-bg">
-                  <p>
-                    <i class="fa-solid fa-caret-right pe-2"></i>
-                    <span class="red-font accordion-link">Analgésie: </span>
-                    administration par voie orale ou parentérale d'AINS ou
-                    d'opioïdes chez les animaux douloureux
-                  </p>
+      <!-- Contact Form -->
+      <div class="row mt-md-5">
+        <div class="col-sm-1 col-md-2 col-xl-3"></div>
 
-                  <p>
-                    <i class="fa-solid fa-caret-right pe-2"></i>
-                    Port de la collerette pour éviter d'autres lésions,
-                    notamment l'automutilation
-                  </p>
-                  <p>
-                    <i class="fa-solid fa-caret-right pe-2"></i>
-                    Humidification de la surface oculaire avec des substituts
-                    lacrymaux ou une solution de NaCl
-                  </p>
-                  <p>
-                    <i class="fa-solid fa-caret-right pe-2"></i>
-                    <span class="red-font accordion-link"
-                      >Blessures des paupières:
-                    </span>
-                    elles doivent être traitées chirurgicalement le plus
-                    rapidement possible, car la formation de cicatrices peut
-                    avoir des conséquences néfastes sur le film lacrymal et donc
-                    sur la surface de l'œil.
-                  </p>
-                  <p>
-                    <i class="fa-solid fa-caret-right pe-2"></i>
-                    <span class="red-font accordion-link"
-                      >Lésions perforantes de la cornée:
-                    </span>
-                    elles doivent être traitées le plus rapidement possible par
-                    microchirurgie. Une hypotonie du globe due à l'écoulement de
-                    l'humeur aqueuse peut entraîner un décollement de la rétine
-                    et d'autres complications pouvant conduire à la cécité.
-                  </p>
-                  <p class="mb-0">
-                    <i class="fa-solid fa-caret-right pe-2"></i>
-                    <span class="red-font accordion-link"
-                      >Prolapsus bulbaire:
-                    </span>
-                    doit être traité le plus rapidement possible par une
-                    intervention chirurgicale (réduction et tarsorraphie). Dans
-                    l'intervalle, une humidification à haute fréquence de la
-                    cornée est nécessaire.
-                  </p>
-                </div>
+        <!-- Form -->
+        <div class="col-sm-10 col-md-8 col-xl-6">
+          <form id="contact-form">
+            <!-- Name -->
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                name="name"
+                id="name"
+                aria-describedby="nameHelp"
+                required
+              />
+            </div>
+
+            <!-- Email Address -->
+            <div class="mb-3">
+              <label for="emailaddress" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                name="emailaddress"
+                id="emailaddress"
+                aria-describedby="emailHelp"
+                required
+              />
+              <div id="emailHelp" class="form-text dark-grey-font">
+                We'll never share your email with anyone else.
               </div>
             </div>
-          </div>
+
+            <!-- Organization -->
+            <div class="mb-3">
+              <label for="org" class="form-label"
+                >Organization<span class="ps-1 red-font pe-5">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="org"
+                id="org"
+                aria-describedby="orgHelp"
+                placeholder="(Optional)"
+              />
+            </div>
+
+            <!-- Message -->
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                rows="5"
+                name="message"
+                id="message"
+                class="form-control"
+                placeholder="Your message here...."
+                required
+              ></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <div class="row">
+              <div class="col">
+                <button id="send-contact" type="submit" class="btn btn-primary">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
+        <div class="col-sm-1 col-md-2 col-xl-3"></div>
       </div>
     </section>
 
@@ -293,7 +300,7 @@
           <!-- Logo -->
           <img
             class="img-fluid bg-light rounded mt-3 mt-sm-4 mt-md-5 mt-lg-4 ms-md-4 ms-lg-5"
-            src="../assets/images/test_logo_small.svg"
+            src="./assets/images/test_logo_small.svg"
             alt="SAVO logo small."
           />
         </div>
@@ -308,7 +315,7 @@
               <a
                 class="nav-link color-off-white text-start footer-nav"
                 aria-current="page"
-                href="./index-fr.html"
+                href="./index.html"
               >
                 Home
               </a>
@@ -318,28 +325,28 @@
             <li class="nav-item">
               <a
                 class="nav-link color-off-white text-start footer-nav"
-                href="./members-fr.html"
-                >Membres
+                href="./members.html"
+                >Mitglieder
               </a>
             </li>
 
             <!-- Informationen dropdown -->
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle color-off-white text-start footer-nav active-footer"
+                class="nav-link dropdown-toggle color-off-white text-start footer-nav"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Informations
+                Informationen
               </a>
               <ul class="dropdown-menu">
                 <li>
                   <a
                     class="dropdown-item header-nav"
-                    href="./info-pet-owner-fr.html"
-                    >... pour les propriétaires d'animaux<i
+                    href="./info-pet-owner.html"
+                    >... für Tierhalter/innen<i
                       class="bi bi-arrow-right ps-2"
                     ></i
                   ></a>
@@ -347,13 +354,15 @@
                 <li>
                   <a
                     class="dropdown-item header-nav"
-                    href="./info-breeders-fr.html"
-                    >... pour les éleveurs<i class="bi bi-arrow-right ps-2"></i
+                    href="./info-breeders.html"
+                    >... für Züchter/innen<i class="bi bi-arrow-right ps-2"></i
                   ></a>
                 </li>
                 <li>
-                  <a class="dropdown-item header-nav active" href="#"
-                    >... pour les vétérinaires référents<i
+                  <a
+                    class="dropdown-item header-nav"
+                    href="./info-supervising-vets.html"
+                    >... für überweisende Tierärzte/Tierärztinnen<i
                       class="bi bi-arrow-right ps-2"
                     ></i
                   ></a>
@@ -370,17 +379,19 @@
           <ul class="row nav">
             <li class="nav-item">
               <a class="nav-link color-off-white text-star footer-nav" href="#">
-                Events &amp; Médias
+                Events &amp; Medien
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link color-off-white text-start footer-nav" href="#"
-                >Liens
+                >Links
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link color-off-white text-start footer-nav" href="#"
-                >Contact
+              <a
+                class="nav-link color-off-white text-start footer-nav active-footer"
+                href="#"
+                >Kontakt
               </a>
             </li>
           </ul>
@@ -421,13 +432,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/e26a309e14.js"
-      crossorigin="anonymous"
-    ></script>
-
     <!-- Custom JS -->
-    <script src="../static/js/accordion-button-reaction.js"></script>
+    <script src="./static/js/email-js-send-form.js"></script>
   </body>
 </html>
