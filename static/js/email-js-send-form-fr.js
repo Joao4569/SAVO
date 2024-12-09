@@ -15,7 +15,7 @@ window.onload = function () {
       emailjs.sendForm("service_ohi1h5h", "template_zp3jexa", this).then(
         () => {
           console.log("SUCCESS!");
-          showModal("Ihre Nachricht wurde erfolgreich gesendet!", "Erfolg");
+          showModal("Votre message a été envoyé avec succès!", "Succès");
 
           // Hide the spinner
           spinner.style.display = "none";
@@ -24,8 +24,9 @@ window.onload = function () {
         (error) => {
           console.log("FAILED...", error);
           showModal(
-            "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie, Ihre Nachricht direkt an info@suter.vet zu senden",
-            "Tut mir leid..."
+            "Une erreur s'est produite lors de l'envoi de votre message. " +
+              "Veuillez essayer d'envoyer votre message directement à info@suter.vet",
+            "Je suis désolé..."
           );
 
           // Hide the spinner

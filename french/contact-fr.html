@@ -16,7 +16,7 @@
     <!-- Link to CSS -->
     <link rel="stylesheet" href="../static/css/base.css" />
 
-    <title>SAVO Home</title>
+    <title>SAVO Contact</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -31,6 +31,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+
+    <!-- Email.js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "U18gLSQ39OJUcKKIk",
+        });
+      })();
+    </script>
   </head>
 
   <body id="body-colors-custom">
@@ -74,9 +87,9 @@
                   <!-- Home -->
                   <li class="nav-item pe-lg-3 pe-xl-1">
                     <a
-                      class="nav-link active header-nav"
+                      class="nav-link header-nav"
                       aria-current="page"
-                      href="#"
+                      href="./index-fr.html"
                       >Home</a
                     >
                   </li>
@@ -145,10 +158,7 @@
 
                   <!-- Contact -->
                   <li class="nav-item ps-lg-3 ps-xl-2">
-                    <a
-                      class="nav-link header-nav"
-                      aria-disabled="true"
-                      href="./contact-fr.html"
+                    <a class="nav-link header-nav active" aria-disabled="true"
                       >Contact</a
                     >
                   </li>
@@ -188,101 +198,141 @@
       </div>
     </header>
 
-    <!-- Main Content -->
-
-    <!-- Qui sommes-nous? -->
-    <section class="contanier-fluid main-content-area">
-      <div class="row">
-        <!-- Text and buttons -->
-        <div
-          class="col-12 col-xl-6 pe-lg-3 pb-lg-5 order-2 order-xl-1 auto-margin"
-        >
-          <h1 class="page-title-font red-font pt-3 pt-sm-4 pb-lg-4">
-            Qui sommes-nous?
-          </h1>
-
-          <!-- First paragraph -->
-          <p class="pt-3">
-            L'Association suisse des ophtalmologues vétérinaires (SAVO) est un
-            groupe de vétérinaires spécialistes en ophtalmologie. Notre objectif
-            est d'offrir les meilleurs soins vétérinaires possibles pour les
-            affections oculaires de votre animal de compagnie et de prévenir
-            leurs maladies héréditaires. Comme chez l'homme, il est aujourd'hui
-            courant en médecine vétérinaire que des spécialistes se consacrent
-            aux maladies oculaires, parfois très complexes, et à leur
-            traitement. Les vétérinaires généralistes envoient donc aux
-            spécialistes certains cas qui dépassent leurs compétences et qui
-            nécessitent des examens et des connaissances spécialisées. Tous nos
-            membres ont suivi une formation complète sur le diagnostic et le
-            traitement des maladies oculaires chez les animaux (ECVO - European
-            College for Veterinary Ophthalmologists ou ACVO - American College
-            for Veterinary Ophthalmologists) et continuent à se perfectionner.
-          </p>
-
-          <!-- Second paragraph -->
-          <p>
-            Nous proposons des traitements en ophtalmologie pour toutes les
-            espèces. Nos membres sont spécialisés dans les soins d'un grand
-            nombre d'espèces animales, y compris les animaux de compagnie, les
-            animaux exotiques, les oiseaux et les animaux d'élevage. Qu'il
-            s'agisse d'examens de routine, de mesures préventives ou de
-            traitements spécialisés, nous garantissons des soins complets et
-            professionnels pour chaque animal.
-          </p>
-
-          <!-- Third paragraph -->
-          <p>
-            Nous travaillons en étroite collaboration avec votre vétérinaire
-            traitant afin de garantir les meilleurs soins possibles à votre
-            animal.
-          </p>
-
-          <!-- Fourth paragraph -->
-          <p>
-            Nous sommes là pour vous aider, vous et votre animal, à résoudre
-            tous les problèmes oculaires qui peuvent survenir.
-          </p>
-
-          <!-- Buttons -->
-          <div class="row">
-            <!-- Membres -->
-            <div
-              class="col-12 col-md-6 pt-5 pb-3 pb-sm-0 pb-md-3 text-center my-2 my-sm-3 g-5"
-            >
+    <!-- modal -->
+    <section id="modal">
+      <div
+        class="modal fade"
+        tabindex="-1"
+        id="modal-test"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-title"></h5>
               <button
                 type="button"
-                class="btn btn-primary"
-                onclick="window.location.href='./members-fr.html';"
-              >
-                Membres<i class="bi bi-arrow-right ps-2"></i>
-              </button>
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                onclick="window.location.href='./index.html';"
+              ></button>
             </div>
-
-            <!-- Contact -->
-            <div
-              class="col-12 col-md-6 pb-3 pt-md-5 text-center my-2 my-md-3 g-5"
-            >
+            <div class="modal-body">
+              <p id="responseMessage"></p>
+            </div>
+            <div class="modal-footer">
               <button
                 type="button"
-                class="btn btn-primary"
-                onclick="window.location.href='./contact-fr.html';"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+                onclick="window.location.href='./index.html';"
               >
-                Contact<i class="bi bi-arrow-right ps-2"></i>
+                Fermer
               </button>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Image -->
-        <div
-          class="col-12 col-xl-6 pt-1 pb-3 pb-sm-0 ps-lg-3 pb-lg-5 order-1 order-xl-2 auto-margin"
-        >
-          <img
-            src="../assets/images/PF_OPTH_ECVO_KatVoelter_POS-001 (1).jpg"
-            class="img-fluid rounded"
-            alt="..."
-          />
+    <!-- Main Content -->
+    <section class="contanier-fluid main-content-area px-5">
+      <!-- Title -->
+      <div class="row rounded-top mb-2">
+        <div class="col-12 px-0">
+          <h1 class="page-title-font mb-5 red-font text-center pt-1">
+            Formulaire de contact
+          </h1>
         </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="row mt-md-5">
+        <div class="col-sm-1 col-md-2 col-xl-3"></div>
+
+        <!-- Form -->
+        <div class="col-sm-10 col-md-8 col-xl-6">
+          <form id="contact-form">
+            <!-- Name -->
+            <div class="mb-3">
+              <label for="name" class="form-label">Nom</label>
+              <input
+                type="text"
+                class="form-control"
+                name="name"
+                id="name"
+                aria-describedby="nameHelp"
+                required
+              />
+            </div>
+
+            <!-- Email Address -->
+            <div class="mb-3">
+              <label for="emailaddress" class="form-label">E-mail</label>
+              <input
+                type="email"
+                class="form-control"
+                name="emailaddress"
+                id="emailaddress"
+                aria-describedby="emailHelp"
+                required
+              />
+              <div id="emailHelp" class="form-text dark-grey-font">
+                Nous ne transmettons jamais votre adresse e-mail à des tiers.
+              </div>
+            </div>
+
+            <!-- Organization -->
+            <div class="mb-3">
+              <label for="org" class="form-label"
+                >Organisation/Société<span class="ps-1 red-font pe-5"
+                  >*</span
+                ></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="org"
+                id="org"
+                aria-describedby="orgHelp"
+                placeholder="(Optional)"
+              />
+            </div>
+
+            <!-- Message -->
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                rows="5"
+                name="message"
+                id="message"
+                class="form-control"
+                placeholder="Votre message ici..."
+                required
+              ></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <div class="row">
+              <div class="col">
+                <button id="send-contact" type="submit" class="btn btn-primary">
+                  <span id="submit-text">Envoyer</span>
+                  <div
+                    id="spinner"
+                    class="spinner-border"
+                    role="status"
+                    style="display: none"
+                  >
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-1 col-md-2 col-xl-3"></div>
       </div>
     </section>
 
@@ -309,9 +359,9 @@
             <!-- Home -->
             <li class="nav-item">
               <a
-                class="nav-link color-off-white text-start active-footer footer-nav"
+                class="nav-link color-off-white text-start footer-nav"
                 aria-current="page"
-                href="#"
+                href="./index-fr.html"
               >
                 Home
               </a>
@@ -392,8 +442,8 @@
             <!-- Contact -->
             <li class="nav-item">
               <a
-                class="nav-link color-off-white text-start footer-nav"
-                href="./contact-fr.html"
+                class="nav-link color-off-white text-start footer-nav active-footer"
+                href="#"
                 >Contact
               </a>
             </li>
@@ -434,5 +484,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Custom JS -->
+    <script src="../static/js/email-js-send-form-fr.js"></script>
   </body>
 </html>
