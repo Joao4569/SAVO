@@ -125,7 +125,8 @@
 
 .accordion-header,
 .accordion-link,
-label {
+label,
+.link-title {
   font-family: "Montserrat", sans-serif !important;
 }
 
@@ -150,6 +151,11 @@ li::marker {
 
 .footer-text {
   color: #f2f2f2;
+}
+
+/* Links */
+.links-link:hover {
+  color: #c71a1a !important;
 }
 
 /* Media queries */
