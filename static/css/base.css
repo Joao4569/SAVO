@@ -153,6 +153,12 @@ li::marker {
   color: #f2f2f2;
 }
 
+.footer-nav,
+.footer-nav-link {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
 /* Links */
 .links-link:hover {
   color: #c71a1a !important;
