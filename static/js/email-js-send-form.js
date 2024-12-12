@@ -12,7 +12,7 @@ window.onload = function () {
       submitText.style.display = "none";
 
       // these IDs from the previous steps
-      emailjs.sendForm("service_ohi1h5h", "template_zp3jexa", this).then(
+      emailjs.sendForm("service_l6iw71x", "template_q5a5ja8", this).then(
         () => {
           console.log("SUCCESS!");
           showModal("Ihre Nachricht wurde erfolgreich gesendet!", "Erfolg");
