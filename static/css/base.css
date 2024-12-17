@@ -181,12 +181,14 @@ li::marker {
   }
 }
 
+/* 576px or more */
 @media (min-width: 576px) {
   .btn {
     width: 60% !important;
   }
 }
 
+/* 768px or less */
 @media (max-width: 767px) {
   .icons {
     font-size: 1rem;
@@ -197,6 +199,13 @@ li::marker {
   }
 }
 
+@media (min-width: 650px) {
+  .dropdown-widen {
+    width: 80%;
+  }
+}
+
+/* 992px or more */
 @media (min-width: 992px) {
   .btn {
     width: 70% !important;
@@ -208,5 +217,9 @@ li::marker {
 
   .navbar-text-cst {
     font-size: 1.1rem !important;
+  }
+
+  .dropdown-widen {
+    width: 250%;
   }
 }
