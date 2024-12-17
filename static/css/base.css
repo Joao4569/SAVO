@@ -239,3 +239,7 @@ li::marker {
     width: 100%;
   }
 }
+
+.acvo-img {
+  width: 150px;
+}
