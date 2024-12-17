@@ -159,6 +159,10 @@ li::marker {
   color: #f2f2f2;
 }
 
+.dropdown-widen-footer {
+  width: 175%;
+}
+
 /* Links */
 .links-link:hover {
   color: #c71a1a !important;
@@ -221,5 +225,17 @@ li::marker {
 
   .dropdown-widen {
     width: 250%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dropdown-widen-footer {
+    width: 150%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .dropdown-widen-footer {
+    width: 100%;
   }
 }
