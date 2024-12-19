@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="SAVO - Swiss Association of Veterinary Ophthalmologists"
+    />
+    <!-- Get Keywords from Anja -->
+    <meta
+      name="keywords"
+      content="SAVO, Savo, Die Schweizerische Vereinigung für Veterinärophthalmologen, Swiss Association of Veterinary Ophthalmologists, Swiss Veterinary Ophthalmologists, Veterinary Ophthalmologist Switzerland"
+    />
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="../static/css/base.css" />
+
+    <title>SAVO Informations pour les propriétaires d'animaux</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
+  </head>
+
+  <body id="body-colors-custom">
+    <!-- Header -->
+    <header class="pt-3 container-fluid">
+      <div class="row py-2 py-sm-3">
+        <!-- Logo -->
+        <div class="col-12 col-md-12 col-xl-5 pb-3 ps-md-5 ps-xl-0 text-center">
+          <img
+            src="..\assets\images\test_logo_3_ai.svg"
+            class="img-fluid"
+            alt="SAVO logo"
+          />
+        </div>
+
+        <!-- Navbar -->
+        <div id="navbar" class="col-12 col-md-12 col-xl-7 my-auto">
+          <!-- Navbar Collapse -->
+          <nav
+            class="navbar navbar-expand-lg py-3 ps-2 ps-sm-4 ps-md-5 navbar-text-cst"
+            aria-label="Main navigation"
+          >
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-center"
+                id="navbarNav"
+              >
+                <!-- Navbar Items -->
+                <ul class="navbar-nav py-1">
+                  <!-- Home -->
+                  <li class="nav-item pe-lg-3 pe-xl-1">
+                    <a
+                      class="nav-link header-nav"
+                      aria-current="page"
+                      href="./index-fr.html"
+                      >Home</a
+                    >
+                  </li>
+
+                  <!-- Membres -->
+                  <li class="nav-item ps-lg-3 ps-xl-2">
+                    <a class="nav-link header-nav" href="./members-fr.html"
+                      >Membres</a
+                    >
+                  </li>
+
+                  <!-- Informations dropdown -->
+                  <li class="nav-item ps-lg-3 ps-xl-2 dropdown">
+                    <a
+                      class="nav-link dropdown-toggle header-nav active"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Informations
+                    </a>
+                    <ul class="dropdown-menu dropdown-widen">
+                      <li>
+                        <a class="dropdown-item header-nav active" href="#"
+                          >... pour les propriétaires d'animaux<i
+                            class="bi bi-arrow-right ps-2"
+                          ></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item header-nav text-wrap"
+                          href="./info-breeders-fr.html"
+                          >... pour les éleveurs/éleveuses
+                          <i class="bi bi-arrow-right ps-2"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item header-nav text-wrap"
+                          href="./info-supervising-vets-fr.html"
+                          >... pour les vétérinaires référents<i
+                            class="bi bi-arrow-right ps-2"
+                          ></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Events & Médias -->
+                  <li class="nav-item ps-lg-3 ps-xl-2">
+                    <a
+                      class="nav-link header-nav"
+                      href="./events-and-media-fr.html"
+                      >Events &amp; Médias</a
+                    >
+                  </li>
+
+                  <!-- Liens -->
+                  <li class="nav-item ps-lg-3 ps-xl-2">
+                    <a
+                      class="nav-link header-nav"
+                      href="./links-fr.html"
+                      aria-disabled="true"
+                      >Liens</a
+                    >
+                  </li>
+
+                  <!-- Contact -->
+                  <li class="nav-item ps-lg-3 ps-xl-2">
+                    <a
+                      class="nav-link header-nav"
+                      aria-disabled="true"
+                      href="./contact-fr.html"
+                      >Contact</a
+                    >
+                  </li>
+
+                  <!-- Language dropdown -->
+                  <li class="nav-item ps-lg-3 ps-xl-2 dropdown ps-lg-5">
+                    <a
+                      class="nav-link dropdown-toggle header-nav"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      FR
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item header-nav text-wrap"
+                          href="../info-pet-owner.html"
+                          >DE</a
+                        >
+                      </li>
+                      <!--<li>
+                        <a class="dropdown-item header-nav text-wrap" href="#"
+                          >IT</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item header-nav text-wrap"
+                          href="index_en.html"
+                          >EN</a
+                        >
+                      </li>-->
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="contanier-fluid main-content-area">
+      <!-- Title -->
+      <div class="row rounded-top mb-2">
+        <div class="col-12 px-0">
+          <h1 class="page-title-font mb-5 red-font text-center pt-1">
+            Informations pour les propriétaires d'animaux
+          </h1>
+        </div>
+      </div>
+
+      <!-- Info Accordion -->
+      <div class="row mt-3">
+        <div class="col-12">
+          <div class="accordion" id="accordion">
+            <!-- Accordion Item 1 -->
+            <div class="accordion-item testing-two mt-3">
+              <!-- Title/Button -->
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button color-off-white light-grey-bg"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <div class="col-11">
+                    <h5 class="mb-0">
+                      Prendre rendez-vous avec un spécialiste en ophtalmologie
+                    </h5>
+                  </div>
+                  <div class="testing col-1">
+                    <i
+                      class="fa-solid fa-circle-chevron-down accordion-icon"
+                    ></i>
+                  </div>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion-1"
+              >
+                <!-- Accordian content -->
+                <div class="accordion-body light-red-bg">
+                  <p class="mb-0">
+                    Sous
+                    <span class="fw-medium"
+                      ><a
+                        class="accordion-link text-link"
+                        href="./members-fr.html"
+                        >MEMBRES</a
+                      ></span
+                    >
+                    , vous trouverez un spécialiste près de chez vous. Pour ce
+                    faire, contactez le cabinet ou la clinique indiqué(e).
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 2 -->
+            <div class="accordion-item testing-two mt-3">
+              <!-- Title/Button -->
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button color-off-white light-grey-bg"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="true"
+                  aria-controls="collapseTwo"
+                >
+                  <div class="col-11">
+                    <h5 class="mb-0">Chevaux et animaux de ferme</h5>
+                  </div>
+                  <div class="testing col-1">
+                    <i
+                      class="fa-solid fa-circle-chevron-down accordion-icon"
+                    ></i>
+                  </div>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion-1"
+              >
+                <!-- Accordian content -->
+                <div class="accordion-body light-red-bg">
+                  <p class="mb-0">
+                    Vous trouverez également les membres qui traitent également
+                    les grands animaux sous
+                    <span class="fw-medium"
+                      ><a
+                        class="accordion-link text-link"
+                        href="./members-fr.html"
+                        >MEMBRES</a
+                      ></span
+                    >.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 3 -->
+            <div class="accordion-item testing-two mt-3">
+              <!-- Title/Button -->
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button color-off-white light-grey-bg"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="true"
+                  aria-controls="collapseThree"
+                >
+                  <div class="col-11">
+                    <h5 class="mb-0">
+                      Quels sont les signes indiquant que mon animal a un
+                      problème oculaire?
+                    </h5>
+                  </div>
+                  <div class="testing col-1">
+                    <i
+                      class="fa-solid fa-circle-chevron-down accordion-icon"
+                    ></i>
+                  </div>
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion-1"
+              >
+                <!-- Accordian content -->
+                <div class="accordion-body light-red-bg">
+                  <p class="mb-2">
+                    Certains animaux n’expriment pas la douleur ou ne montrent
+                    que des signes très subtils. Les signes plus évidents de
+                    problèmes oculaires sont les suivants:
+                  </p>
+                  <ul class="ms-lg-5">
+                    <li><span>Clignement excessif des paupières</span></li>
+                    <li><span>Frottement de l'œil affecté</span></li>
+                    <li>
+                      <span>Rougeurs des paupières ou de la conjonctive</span>
+                    </li>
+                    <li>
+                      <span>
+                        Changement de couleur de la surface ou de l'intérieur de
+                        l'œil
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        Ecoulement &#40;larmoiement, écoulement muqueux,
+                        purulent ou sanguinolant&#41;
+                      </span>
+                    </li>
+                    <li><span>Corps étranger visible</span></li>
+                    <li><span>Saignement</span></li>
+                    <li><span>Œil proéminent</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 4 -->
+            <div class="accordion-item testing-two mt-3">
+              <!-- Title/Button -->
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button color-off-white light-grey-bg"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="true"
+                  aria-controls="collapseFour"
+                >
+                  <div class="col-11">
+                    <h5 class="mb-0">Que faire en cas d'urgence?</h5>
+                  </div>
+                  <div class="testing col-1">
+                    <i
+                      class="fa-solid fa-circle-chevron-down accordion-icon"
+                    ></i>
+                  </div>
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion-1"
+              >
+                <!-- Accordian content -->
+                <div class="accordion-body light-red-bg">
+                  <p>
+                    Contactez en premier lieu votre généraliste. Il ou elle
+                    pourra évaluer l'ampleur du problème, soit par téléphone,
+                    soit après le premier examen, et vous adressera à nous si
+                    nécessaire.
+                  </p>
+
+                  <p>
+                    Pour les chiens et les chats : si vous avez une collerette à
+                    la maison, mettez-le à votre animal jusqu'à ce qu'il se
+                    présente chez la/le vétérinaire.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 5 -->
+            <div class="accordion-item testing-two mt-3">
+              <!-- Title/Button -->
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button color-off-white light-grey-bg"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="true"
+                  aria-controls="collapseFive"
+                >
+                  <div class="col-11">
+                    <h5 class="mb-0">
+                      Vivre avec un animal domestique aveugle
+                    </h5>
+                  </div>
+                  <div class="testing col-1">
+                    <i
+                      class="fa-solid fa-circle-chevron-down accordion-icon"
+                    ></i>
+                  </div>
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion-1"
+              >
+                <!-- Accordian content -->
+                <div class="accordion-body light-red-bg">
+                  <!-- Accordion Intro -->
+                  <p>
+                    Le diagnostic de cécité chez un animal de compagnie peut
+                    être une nouvelle bouleversante pour les propriétaires
+                    d'animaux. Il est toutefois important de se concentrer sur
+                    la manière de continuer à enrichir la vie de l'animal
+                    concerné et d'assurer sa qualité de vie.
+                  </p>
+
+                  <!-- Accordion heading -->
+                  <h5 class="fw-medium red-font mb-3">
+                    Premières étapes après le diagnostic
+                  </h5>
+                  <p>
+                    La première chose à faire est de déterminer les causes
+                    exactes et l'étendue de la cécité. La/le vétérinaire
+                    spécialiste en ophtalmologie peut effectuer les examens
+                    nécessaires et faire des recommandations. Il est important
+                    de poser toutes les questions et de bien comprendre le
+                    diagnostic afin d'offrir les meilleurs soins possibles.
+                  </p>
+
+                  <!-- Accordion heading -->
+                  <h5 class="fw-medium red-font mb-3">
+                    Adaptation de l'environnement
+                  </h5>
+                  <p>
+                    Les animaux aveugles peuvent s'adapter étonnamment bien à
+                    leur handicap, surtout s'ils vivent dans un environnement
+                    sûr et familier. Voici quelques conseils à cet égard :
+                  </p>
+
+                  <!-- Accordion sub-heading -->
+                  <h6 class="fw-medium dark-grey-font">Assurer la sécurité:</h6>
+                  <p>
+                    enlever les sources de danger telles que les bords de
+                    meubles pointus
+                  </p>
+
+                  <!-- Accordion sub-heading -->
+                  <h6 class="fw-medium dark-grey-font">Stabilité:</h6>
+                  <p>
+                    ne changez pas souvent l'emplacement des meubles à la maison
+                    pour que l'animal puisse s'orienter.
+                  </p>
+
+                  <!-- Accordion sub-heading -->
+                  <h6 class="fw-medium dark-grey-font">Bruits et odeurs:</h6>
+                  <p>
+                    utilisez des signaux acoustiques ou des marqueurs olfactifs
+                    pour indiquer les zones importantes comme les mangeoires ou
+                    les dortoirs.
+                  </p>
+
+                  <!-- Accordion heading -->
+                  <h5 class="fw-medium red-font mb-3">
+                    Communication et entraînement
+                  </h5>
+                  <p>
+                    L'utilisation d'ordres verbaux et de renforcements positifs
+                    peut aider à développer la confiance de l'animal. Avec de la
+                    patience et un entraînement cohérent, les animaux de
+                    compagnie aveugles peuvent apprendre à se déplacer en toute
+                    sécurité dans leur environnement et à répondre aux appels ou
+                    aux instructions.
+                  </p>
+
+                  <!-- Accordion heading -->
+                  <h5 class="fw-medium red-font mb-3">Le soutien émotionnel</h5>
+                  <p>
+                    L'adaptation émotionnelle est importante à la fois pour
+                    l'animal et pour le propriétaire. Les animaux de compagnie
+                    aveugles peuvent continuer à mener une vie heureuse s'ils
+                    sont soutenus avec amour et patience. La routine, la
+                    sécurité et les activités communes telles que les promenades
+                    (avec une laisse si nécessaire) ou les jeux avec des stimuli
+                    sonores contribuent à améliorer le bien-être de l'animal.
+                  </p>
+
+                  <!-- Horizontal line break -->
+                  <hr />
+
+                  <!-- Further content -->
+                  <p>
+                    La cécité ne signifie pas la fin de la qualité de vie d'un
+                    animal de compagnie. Avec un environnement sûr, un
+                    entraînement ciblé et beaucoup d'affection, votre animal de
+                    compagnie peut mener une vie heureuse et épanouie malgré sa
+                    perte de vision. Votre soutien et vos soins sont la clé
+                    d'une gestion réussie de cette nouvelle situation.
+                  </p>
+                  <p class="mb-5">
+                    Vous trouverez d'autres conseils précieux dans les livres et
+                    sites Internet suivants :
+                  </p>
+
+                  <ul class="ms-lg-5">
+                    <!-- Resource 1 -->
+                    <li>
+                      <span>
+                        <i class="fa-solid fa-book me-1 red-font me-2"></i>
+                        <em class="me-3"><strong>Siehst du es?</strong></em>
+                      </span>
+                      <span class="me-3">Corinne Egger/Romy Illi</span>
+                      <span>
+                        <i
+                          class="fa-solid fa-arrow-up-right-from-square me-1 red-font"
+                        ></i>
+                        <a
+                          class="dark-grey-font text-link"
+                          href="https://www.blindehunde.ch"
+                          target="_blank"
+                          rel="noopener"
+                        >
+                          blindehunde.ch
+                        </a>
+                      </span>
+                    </li>
+
+                    <!-- Resource 2 -->
+                    <li>
+                      <span>
+                        <i class="fa-solid fa-book me-1 red-font me-2"></i>
+                        <em class="me-3"
+                          ><strong>Blinder Hund - was nun?</strong></em
+                        ></span
+                      >
+                      <span class="me-3">Nicole Horsky</span>
+                    </li>
+
+                    <!-- Resource 3 -->
+                    <li>
+                      <span>
+                        <i class="fa-solid fa-book me-1 red-font me-2"></i>
+                        <em class="me-3"
+                          ><strong>Caring for a blind cat</strong></em
+                        ></span
+                      >
+                      <span class="me-3">Natasha Mitchell</span>
+                    </li>
+
+                    <!-- Resource 4 -->
+                    <li>
+                      <span>
+                        <i
+                          class="fa-solid fa-arrow-up-right-from-square me-1 red-font"
+                        ></i>
+                        <a
+                          class="dark-grey-font text-link"
+                          href="https://www.behinderte-hunde.ch"
+                          target="_blank"
+                          rel="noopener"
+                        >
+                          behinderte-hunde.ch
+                        </a>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid bright-red-bg mt-5">
+      <div class="row justify-content-evenly">
+        <!-- Contact information -->
+        <div
+          class="col-6 col-sm-4 col-lg-3 ps-4 pt-4 pt-sm-4 order-3 order-sm-1 justify-content-center"
+        >
+          <!-- Logo -->
+          <img
+            class="img-fluid bg-light rounded mt-3 mt-sm-4 mt-md-5 mt-lg-4 ms-md-4 ms-lg-5"
+            src="../assets/images/test_logo_small.svg"
+            alt="SAVO logo small."
+          />
+        </div>
+
+        <!-- Footer navigation 1 -->
+        <div
+          class="col-6 col-sm-4 col-lg-3 pt-4 order-1 order-sm-2 footer-text-cst"
+        >
+          <ul class="row nav">
+            <!-- Home -->
+            <li class="nav-item">
+              <a
+                class="nav-link color-off-white text-start footer-nav"
+                aria-current="page"
+                href="./index-fr.html"
+              >
+                Home
+              </a>
+            </li>
+
+            <!-- Membres -->
+            <li class="nav-item">
+              <a
+                class="nav-link color-off-white text-start footer-nav"
+                href="./members-fr.html"
+                >Membres
+              </a>
+            </li>
+
+            <!-- Informations dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle color-off-white text-start footer-nav active-footer"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Informations
+              </a>
+              <ul class="dropdown-menu dropdown-widen-footer">
+                <li>
+                  <a class="dropdown-item header-nav active" href="#"
+                    >... pour les propriétaires d'animaux<i
+                      class="bi bi-arrow-right ps-2"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item header-nav text-wrap"
+                    href="./info-breeders-fr.html"
+                    >... pour les éleveurs/éleveuses<i
+                      class="bi bi-arrow-right ps-2"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item header-nav text-wrap"
+                    href="./info-supervising-vets-fr.html"
+                    >... pour les vétérinaires référents<i
+                      class="bi bi-arrow-right ps-2"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer navigation 2 -->
+        <div
+          class="col-6 col-sm-4 col-lg-3 pt-4 pb-2 order-2 order-sm-3 footer-text-cst"
+        >
+          <ul class="row nav">
+            <!-- Events & Médias -->
+            <li class="nav-item">
+              <a class="nav-link color-off-white text-star footer-nav" href="#">
+                Events &amp; Médias
+              </a>
+            </li>
+
+            <!-- Liens -->
+            <li class="nav-item">
+              <a class="nav-link color-off-white text-start footer-nav" href="#"
+                >Liens
+              </a>
+            </li>
+
+            <!-- Contact -->
+            <li class="nav-item">
+              <a
+                class="nav-link color-off-white text-start footer-nav"
+                href="./contact-fr.html"
+                >Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Copyright -->
+        <div class="col-12 col-sm-12 order-5 footer-text text-center">
+          <a
+            class="footer-nav-link"
+            href="https://joao4569.github.io/portfolio/"
+            rel="noopener"
+            target="_blank"
+          >
+            <p class="pt-4 pb-2">
+              <span class="footer-nav">
+                &copy; 2024 Design and code by J.Rodrigues
+              </span>
+            </p>
+          </a>
+        </div>
+
+        <!-- Privacy policy -->
+        <div
+          class="col-6 col-sm-12 col-lg-3 order-4 pt-lg-3 order-sm-4 footer-text text-start text-sm-center text-lg-start footer-text-cst"
+        >
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-12">
+              <p class="pt-5 pt-lg-4">
+                <span class="footer-nav">Imprimer</span>
+              </p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-12">
+              <p class="pt-1 pt-sm-5 pt-lg-3">
+                <span class="footer-nav">Politique de confidentialité</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/e26a309e14.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom JS -->
+    <script src="../static/js/accordion-button-reaction.js"></script>
+  </body>
+</html>
