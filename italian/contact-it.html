@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="it">
   <head>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta charset="UTF-8" />
@@ -14,9 +14,9 @@
       content="SAVO, Savo, Die Schweizerische Vereinigung für Veterinärophthalmologen, Swiss Association of Veterinary Ophthalmologists, Swiss Veterinary Ophthalmologists, Veterinary Ophthalmologist Switzerland"
     />
     <!-- Link to CSS -->
-    <link rel="stylesheet" href="./static/css/base.css" />
+    <link rel="stylesheet" href="../static/css/base.css" />
 
-    <title>SAVO Home</title>
+    <title>SAVO Contact</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -32,24 +32,37 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
 
+    <!-- Email.js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "RtgJVPeA4dL151fbO",
+        });
+      })();
+    </script>
     <!-- Favicon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./assets/favicon/apple-touch-icon.png"
+      href="../assets/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/favicon/favicon-32x32.png"
+      href="../assets/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./assets/favicon/favicon-16x16.png"
+      href="../assets/favicon/favicon-16x16.png"
     />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
   </head>
 
   <body id="body-colors-custom">
@@ -59,7 +72,7 @@
         <!-- Logo -->
         <div class="col-12 col-md-12 col-xl-5 pb-3 ps-md-5 ps-xl-0 text-center">
           <img
-            src=".\assets\images\test_logo_3_ai.svg"
+            src="..\assets\images\test_logo_3_ai.svg"
             class="img-fluid"
             alt="SAVO logo"
           />
@@ -93,22 +106,22 @@
                   <!-- Home -->
                   <li class="nav-item pe-lg-3 pe-xl-1">
                     <a
-                      class="nav-link active header-nav"
+                      class="nav-link header-nav"
                       aria-current="page"
-                      href="#"
+                      href="./index-en.html"
                       >Home</a
                     >
                   </li>
 
-                  <!-- Mitglieder -->
+                  <!-- Members -->
                   <li class="nav-item ps-lg-3 ps-xl-2">
-                    <a class="nav-link header-nav" href="./members.html"
-                      >Mitglieder</a
+                    <a class="nav-link header-nav" href="./members-it.html"
+                      >Membri</a
                     >
                   </li>
 
-                  <!-- Informationen dropdown -->
-                  <li class="nav-item ps-lg-3 ps-xl-2 dropdown dark-grey-font">
+                  <!-- information dropdown -->
+                  <li class="nav-item ps-lg-3 ps-xl-2 dropdown">
                     <a
                       class="nav-link dropdown-toggle header-nav"
                       href="#"
@@ -116,14 +129,14 @@
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      Informationen
+                      Informazioni
                     </a>
                     <ul class="dropdown-menu dropdown-widen">
                       <li>
                         <a
                           class="dropdown-item header-nav text-wrap"
-                          href="./info-pet-owner.html"
-                          >... für Tierhalter/innen<i
+                          href="./info-pet-owner-it.html"
+                          >... per i proprietari di animali domestici<i
                             class="bi bi-arrow-right ps-2"
                           ></i
                         ></a>
@@ -131,17 +144,16 @@
                       <li>
                         <a
                           class="dropdown-item header-nav text-wrap"
-                          href="./info-breeders.html"
-                          >... für Züchter/innen<i
-                            class="bi bi-arrow-right ps-2"
-                          ></i
+                          href="./info-breeders-it.html"
+                          >... per gli allevatori
+                          <i class="bi bi-arrow-right ps-2"></i
                         ></a>
                       </li>
                       <li>
                         <a
                           class="dropdown-item header-nav text-wrap"
-                          href="./info-supervising-vets.html"
-                          >... für überweisende Tierärzte/Tierärztinnen<i
+                          href="./info-supervising-vets-en.html"
+                          >... for referring veterinarians<i
                             class="bi bi-arrow-right ps-2"
                           ></i
                         ></a>
@@ -149,12 +161,12 @@
                     </ul>
                   </li>
 
-                  <!-- Events & Medien -->
+                  <!-- Events & Médias -->
                   <li class="nav-item ps-lg-3 ps-xl-2">
                     <a
                       class="nav-link header-nav"
-                      href="./events-and-media.html"
-                      >Events &amp; Medien</a
+                      href="./events-and-media-en.html"
+                      >Events &amp; Media</a
                     >
                   </li>
 
@@ -162,19 +174,16 @@
                   <li class="nav-item ps-lg-3 ps-xl-2">
                     <a
                       class="nav-link header-nav"
+                      href="./links-en.html"
                       aria-disabled="true"
-                      href="./links.html"
                       >Links</a
                     >
                   </li>
 
-                  <!-- Kontakt -->
+                  <!-- Contact -->
                   <li class="nav-item ps-lg-3 ps-xl-2">
-                    <a
-                      class="nav-link header-nav"
-                      aria-disabled="true"
-                      href="./contact.html"
-                      >Kontakt</a
+                    <a class="nav-link header-nav active" aria-disabled="true"
+                      >Contact</a
                     >
                   </li>
 
@@ -187,28 +196,26 @@
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      DE
+                      EN
                     </a>
                     <ul class="dropdown-menu">
                       <li>
                         <a
                           class="dropdown-item header-nav text-wrap"
-                          href="./french/index-fr.html"
-                          >FR</a
+                          href="../contact.html"
+                          >DE</a
                         >
                       </li>
-                      <li>
-                        <a
-                          class="dropdown-item header-nav text-wrap"
-                          href="/italian/index-it.html"
+                      <!--<li>
+                        <a class="dropdown-item header-nav text-wrap" href="#"
                           >IT</a
                         >
-                      </li>
+                      </li>-->
                       <li>
                         <a
                           class="dropdown-item header-nav text-wrap"
-                          href="./english/index-en.html"
-                          >EN</a
+                          href="../french/contact-fr.html"
+                          >FR</a
                         >
                       </li>
                     </ul>
@@ -221,100 +228,139 @@
       </div>
     </header>
 
-    <!-- Main Content -->
-
-    <!-- Wer sind wir? -->
-    <section class="contanier-fluid main-content-area">
-      <!-- Title -->
-      <div class="row rounded-top mb-2">
-        <div class="col-12 px-0">
-          <h1 class="page-title-font mb-5 red-font text-center pt-1">
-            Wer sind wir?
-          </h1>
-        </div>
-      </div>
-
-      <div class="row">
-        <!-- Text and buttons -->
-        <div
-          class="col-12 col-xl-6 pe-lg-3 pb-lg-5 order-2 order-xl-1 auto-margin"
-        >
-          <p class="pt-3">
-            Die Schweizerische Vereinigung für Veterinärophthalmologen
-            &#40;SAVO&#41; ist eine Gruppe von Tierärzten/Tierärztinnen mit
-            Spezialisierung auf Augenheilkunde. Unser Anliegen ist es, die
-            bestmögliche tierärztliche Versorgung von Augenleiden für Ihr
-            Haustier zu bieten und deren Erbkrankheiten zu verhindern. Ähnlich
-            wie beim Menschen, ist es heutzutage in der Tiermedizin üblich, dass
-            Spezialisten/Spezialistinnen sich den teils hochkomplexen
-            Erkrankungen und Therapien bei Augen widmen. Haustierärzte/ärztinnen
-            überweisen dementsprechend gewisse Fälle, welche ihre
-            Untersuchungsmöglichkeiten oder Kompetenzen überschreiten. Alle
-            unsere Mitglieder haben eine umfassende Ausbildung in der Diagnose
-            und Behandlung von Augenerkrankungen bei Tieren absolviert &#40;ECVO
-            &ndash; European College of Veterinary Ophthalmologists oder ACVO
-            &#45; American College of Veterinary Ophthalmologists&#41; und
-            bilden sich stets weiter.
-          </p>
-          <p>
-            Wir bieten tierärztliche Behandlungen für alle Spezies an. Unsere
-            Mitglieder sind auf die Betreuung einer Vielzahl von Tierarten
-            spezialisiert, einschließlich Heimtiere, exotische Tiere, Vögel und
-            Nutztiere. Unabhängig davon, ob es sich um Routineuntersuchungen,
-            präventive Maßnahmen oder spezialisierte Behandlungen handelt,
-            gewährleisten wir eine umfassende und professionelle Versorgung für
-            jedes Tier.
-          </p>
-          <p>
-            Wir arbeiten eng mit Ihrer Haustierärztin/Ihrem Haustierarzt
-            zusammen, um die bestmögliche Versorgung Ihres Tieres zu
-            gewährleisten.
-          </p>
-          <p>
-            Wir sind da, um Ihnen und Ihrem Tier bei allen auftretenden
-            Augenproblemen zu helfen.
-          </p>
-
-          <!-- Buttons -->
-          <div class="row">
-            <!-- Mitglieder -->
-            <div
-              class="col-12 col-md-6 pt-5 pb-3 pb-sm-0 pb-md-3 text-center my-2 my-sm-3 g-5"
-            >
+    <!-- modal -->
+    <section id="modal">
+      <div
+        class="modal fade"
+        tabindex="-1"
+        id="modal-test"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-title"></h5>
               <button
                 type="button"
-                class="btn btn-primary"
-                onclick="window.location.href='./members.html';"
-              >
-                Mitglieder<i class="bi bi-arrow-right ps-2"></i>
-              </button>
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                onclick="window.location.href='./index-en.html';"
+              ></button>
             </div>
-
-            <!-- Kontakt -->
-            <div
-              class="col-12 col-md-6 pb-3 pt-md-5 text-center my-2 my-md-3 g-5"
-            >
+            <div class="modal-body">
+              <p id="responseMessage"></p>
+            </div>
+            <div class="modal-footer">
               <button
                 type="button"
-                class="btn btn-primary"
-                onclick="window.location.href='./contact.html';"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+                onclick="window.location.href='./index-en.html';"
               >
-                Kontakt<i class="bi bi-arrow-right ps-2"></i>
+                Close
               </button>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Image -->
-        <div
-          class="col-12 col-xl-6 pt-1 pb-3 pb-sm-0 ps-lg-3 pb-lg-5 order-1 order-xl-2 auto-margin"
-        >
-          <img
-            src="./assets/images/PF_OPTH_ECVO_KatVoelter_POS-001 (1).jpg"
-            class="img-fluid rounded"
-            alt="..."
-          />
+    <!-- Main Content -->
+    <section class="contanier-fluid main-content-area px-5">
+      <!-- Title -->
+      <div class="row rounded-top mb-2">
+        <div class="col-12 px-0">
+          <h1 class="page-title-font mb-5 red-font text-center pt-1">
+            Contact Us
+          </h1>
         </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="row mt-md-5">
+        <div class="col-sm-1 col-md-2 col-xl-3"></div>
+
+        <!-- Form -->
+        <div class="col-sm-10 col-md-8 col-xl-6">
+          <form id="contact-form">
+            <!-- Name -->
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                name="name"
+                id="name"
+                aria-describedby="nameHelp"
+                required
+              />
+            </div>
+
+            <!-- Email Address -->
+            <div class="mb-3">
+              <label for="emailaddress" class="form-label">E-mail</label>
+              <input
+                type="email"
+                class="form-control"
+                name="emailaddress"
+                id="emailaddress"
+                aria-describedby="emailHelp"
+                required
+              />
+              <div id="emailHelp" class="form-text dark-grey-font">
+                We will never share your information with third parties.
+              </div>
+            </div>
+
+            <!-- Organization -->
+            <div class="mb-3">
+              <label for="org" class="form-label"
+                >Organisation<span class="ps-1 red-font pe-5">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="org"
+                id="org"
+                aria-describedby="orgHelp"
+                placeholder="(Optional)"
+              />
+            </div>
+
+            <!-- Message -->
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                rows="5"
+                name="message"
+                id="message"
+                class="form-control"
+                placeholder="Your message here..."
+                required
+              ></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <div class="row">
+              <div class="col">
+                <button id="send-contact" type="submit" class="btn btn-primary">
+                  <span id="submit-text">Send</span>
+                  <div
+                    id="spinner"
+                    class="spinner-border"
+                    role="status"
+                    style="display: none"
+                  >
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-1 col-md-2 col-xl-3"></div>
       </div>
     </section>
 
@@ -328,7 +374,7 @@
           <!-- Logo -->
           <img
             class="img-fluid bg-light rounded mt-3 mt-sm-4 mt-md-5 mt-lg-4 ms-md-4 ms-lg-5"
-            src="./assets/images/test_logo_small.svg"
+            src="../assets/images/test_logo_small.svg"
             alt="SAVO logo small."
           />
         </div>
@@ -341,24 +387,24 @@
             <!-- Home -->
             <li class="nav-item">
               <a
-                class="nav-link color-off-white text-start active-footer footer-nav"
+                class="nav-link color-off-white text-start footer-nav"
                 aria-current="page"
-                href="#"
+                href="./index-en.html"
               >
                 Home
               </a>
             </li>
 
-            <!-- Mitglieder -->
+            <!-- Members -->
             <li class="nav-item">
               <a
                 class="nav-link color-off-white text-start footer-nav"
-                href="./members.html"
-                >Mitglieder
+                href="./members-it.html"
+                >Membri
               </a>
             </li>
 
-            <!-- Informationen dropdown -->
+            <!-- information dropdown -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle color-off-white text-start footer-nav"
@@ -367,14 +413,14 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Informationen
+                Informazioni
               </a>
               <ul class="dropdown-menu dropdown-widen-footer">
                 <li>
                   <a
                     class="dropdown-item header-nav text-wrap"
-                    href="./info-pet-owner.html"
-                    >... für Tierhalter/innen<i
+                    href="./info-pet-owner-it.html"
+                    >... per i proprietari di animali domestici<i
                       class="bi bi-arrow-right ps-2"
                     ></i
                   ></a>
@@ -382,15 +428,15 @@
                 <li>
                   <a
                     class="dropdown-item header-nav text-wrap"
-                    href="./info-breeders.html"
-                    >... für Züchter/innen<i class="bi bi-arrow-right ps-2"></i
+                    href="./info-breeders-it.html"
+                    >... per gli allevatori<i class="bi bi-arrow-right ps-2"></i
                   ></a>
                 </li>
                 <li>
                   <a
                     class="dropdown-item header-nav text-wrap"
-                    href="./info-supervising-vets.html"
-                    >... für überweisende Tierärzte/Tierärztinnen<i
+                    href="./info-supervising-vets-en.html"
+                    >... for referring veterinarians<i
                       class="bi bi-arrow-right ps-2"
                     ></i
                   ></a>
@@ -405,26 +451,31 @@
           class="col-6 col-sm-4 col-lg-3 pt-4 pb-2 order-2 order-sm-3 footer-text-cst"
         >
           <ul class="row nav">
+            <!-- Events & Médias -->
             <li class="nav-item">
               <a
                 class="nav-link color-off-white text-star footer-nav"
-                href="./events-and-media.html"
+                href="./events-and-media-en.html"
               >
-                Events &amp; Medien
+                Events &amp; Media
               </a>
             </li>
+
+            <!-- Links -->
             <li class="nav-item">
               <a
                 class="nav-link color-off-white text-start footer-nav"
-                href="./links.html"
+                href="./links-en.html"
                 >Links
               </a>
             </li>
+
+            <!-- Contact -->
             <li class="nav-item">
               <a
-                class="nav-link color-off-white text-start footer-nav"
-                href="./contact.html"
-                >Kontakt
+                class="nav-link color-off-white text-start footer-nav active-footer"
+                href="#"
+                >Contact
               </a>
             </li>
           </ul>
@@ -452,14 +503,14 @@
         >
           <div class="row">
             <div class="col-12 col-sm-6 col-lg-12">
-              <!-- Impressum placeholder -->
+              <!-- Imprint placeholder -->
               <p class="pt-5 pt-lg-4">
                 <span class="footer-nav"></span>
               </p>
             </div>
             <div class="col-12 col-sm-6 col-lg-12">
               <p class="pt-1 pt-sm-5 pt-lg-3">
-                <span class="footer-nav">Datenschutzerklärung</span>
+                <span class="footer-nav">Privacy policy</span>
               </p>
             </div>
           </div>
@@ -473,5 +524,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Custom JS -->
+    <script src="../static/js/email-js-send-form-en.js"></script>
   </body>
 </html>
