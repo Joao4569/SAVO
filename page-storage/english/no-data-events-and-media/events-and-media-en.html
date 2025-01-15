@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta charset="UTF-8" />
@@ -14,9 +14,9 @@
       content="SAVO, Savo, Die Schweizerische Vereinigung für Veterinärophthalmologen, Swiss Association of Veterinary Ophthalmologists, Swiss Veterinary Ophthalmologists, Veterinary Ophthalmologist Switzerland"
     />
     <!-- Link to CSS -->
-    <link rel="stylesheet" href="./static/css/base.css" />
+    <link rel="stylesheet" href="../static/css/base.css" />
 
-    <title>SAVO Events & Media</title>
+    <title>SAVO Events &amp; Media</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -35,20 +35,21 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./assets/favicon/apple-touch-icon.png"
+      href="../assets/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/favicon/favicon-32x32.png"
+      href="../assets/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./assets/favicon/favicon-16x16.png"
+      href="../assets/favicon/favicon-16x16.png"
     />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
   </head>
 
   <body id="body-colors-custom">
@@ -58,7 +59,7 @@
         <!-- Logo -->
         <div class="col-12 col-md-12 col-xl-5 pb-3 ps-md-5 ps-xl-0 text-center">
           <img
-            src=".\assets\images\test_logo_3_ai.svg"
+            src="..\assets\images\test_logo_3_ai.svg"
             class="img-fluid"
             alt="SAVO logo"
           />
@@ -94,20 +95,20 @@
                     <a
                       class="nav-link header-nav"
                       aria-current="page"
-                      href="./index.html"
+                      href="./index-en.html"
                       >Home</a
                     >
                   </li>
 
-                  <!-- Mitglieder -->
+                  <!-- Members -->
                   <li class="nav-item ps-lg-3 ps-xl-2">
-                    <a class="nav-link header-nav" href="./members.html"
-                      >Mitglieder</a
+                    <a class="nav-link header-nav" href="./members-en.html"
+                      >Members</a
                     >
                   </li>
 
-                  <!-- Informationen dropdown -->
-                  <li class="nav-item ps-lg-3 ps-xl-2 dropdown dark-grey-font">
+                  <!-- information dropdown -->
+                  <li class="nav-item ps-lg-3 ps-xl-2 dropdown">
                     <a
                       class="nav-link dropdown-toggle header-nav"
                       href="#"
@@ -115,14 +116,14 @@
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      Informationen
+                      Information
                     </a>
                     <ul class="dropdown-menu dropdown-widen">
                       <li>
                         <a
                           class="dropdown-item header-nav text-wrap"
-                          href="./info-pet-owner.html"
-                          >... für Tierhalter/innen<i
+                          href="./info-pet-owner-en.html"
+                          >... for pet owners<i
                             class="bi bi-arrow-right ps-2"
                           ></i
                         ></a>
@@ -130,17 +131,16 @@
                       <li>
                         <a
                           class="dropdown-item header-nav text-wrap"
-                          href="./info-breeders.html"
-                          >... für Züchter/innen<i
-                            class="bi bi-arrow-right ps-2"
-                          ></i
+                          href="./info-breeders-en.html"
+                          >... for breeders
+                          <i class="bi bi-arrow-right ps-2"></i
                         ></a>
                       </li>
                       <li>
                         <a
                           class="dropdown-item header-nav text-wrap"
-                          href="./info-supervising-vets.html"
-                          >... für überweisende Tierärzte/Tierärztinnen<i
+                          href="./info-supervising-vets-en.html"
+                          >... for referring veterinarians<i
                             class="bi bi-arrow-right ps-2"
                           ></i
                         ></a>
@@ -148,10 +148,12 @@
                     </ul>
                   </li>
 
-                  <!-- Events & Medien -->
+                  <!-- Events & Médias -->
                   <li class="nav-item ps-lg-3 ps-xl-2">
-                    <a class="nav-link header-nav active" href="#"
-                      >Events &amp; Medien</a
+                    <a
+                      class="nav-link header-nav active"
+                      href="./events-and-media-en.html"
+                      >Events &amp; Media</a
                     >
                   </li>
 
@@ -159,19 +161,19 @@
                   <li class="nav-item ps-lg-3 ps-xl-2">
                     <a
                       class="nav-link header-nav"
+                      href="./links-en.html"
                       aria-disabled="true"
-                      href="./links.html"
                       >Links</a
                     >
                   </li>
 
-                  <!-- Kontakt -->
+                  <!-- Contact -->
                   <li class="nav-item ps-lg-3 ps-xl-2">
                     <a
                       class="nav-link header-nav"
                       aria-disabled="true"
-                      href="./contact.html"
-                      >Kontakt</a
+                      href="./contact-en.html"
+                      >Contact</a
                     >
                   </li>
 
@@ -184,14 +186,14 @@
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      DE
+                      EN
                     </a>
                     <ul class="dropdown-menu">
                       <li>
                         <a
                           class="dropdown-item header-nav text-wrap"
-                          href="./french/events-and-media-fr.html"
-                          >FR</a
+                          href="../events-and-media.html"
+                          >DE</a
                         >
                       </li>
                       <!--<li>
@@ -202,8 +204,8 @@
                       <li>
                         <a
                           class="dropdown-item header-nav text-wrap"
-                          href="./english/events-and-media-en.html"
-                          >EN</a
+                          href="../french/events-and-media-fr.html"
+                          >FR</a
                         >
                       </li>
                     </ul>
@@ -222,61 +224,43 @@
       <div class="row rounded-top mb-2">
         <div class="col-12 px-0">
           <h1 class="page-title-font mb-5 red-font text-center pt-1">
-            Events &amp; Medien
+            Events &amp; Media
           </h1>
         </div>
       </div>
 
       <div class="row px-3">
-        <!-- Media -->
+        <!-- text -->
         <div
           class="col-12 col-xl-6 order-2 auto-margin mt-5 m-xl-auto fw-light"
         >
-          <!-- Text media -->
+          <!-- Text -->
+          <p
+            class="pt-3 pb-3 text-center mx-2 mx-xl-5 border rounded light-red-bg px-3 px-lg-5"
+          >
+            Further training courses and lectures for vets and veterinary
+            students as well as for pet owners, breeders and interested private
+            individuals are regularly published here.
+          </p>
           <p
             class="mt-5 pt-3 pb-3 text-center mx-2 mx-xl-5 border rounded light-red-bg px-3 px-lg-5"
           >
-            Für Medienanfragen können Sie sich gerne über das
+            For media inquiries, please contact us using the
             <span class="fw-medium">
-              <a class="accordion-link text-link" href="./contact.html"
-                >Kontaktformular</a
+              <a class="accordion-link text-link" href="./contact-en.html"
+                >contact form.</a
               >
             </span>
-            an uns wenden.
           </p>
         </div>
 
-        <!-- Events -->
+        <!-- Image -->
         <div class="col-12 col-xl-6 order-1 auto-margin">
-          <!-- Event 1 -->
-          <div class="card">
-            <div class="card-header light-grey-bg color-off-white fw-semibold">
-              <i class="bi bi-calendar-event me-2"></i>
-              27 Februar 2025
-            </div>
-            <div class="card-body event-card-body">
-              <h5 class="card-title event-title red-font mb-3">
-                Fortbildung für Tierärzte
-              </h5>
-              <p class="card-text">
-                Das canine Primärglaukom - aktuelle Forschungs- und
-                Therapieansätze mit Fokus auf die Besitzerkommunikation Details
-                und Anmeldung unter:<br /><br />
-                <a
-                  href="https://www.acvo.org/"
-                  rel="noopener"
-                  target="_blank"
-                  class="accordion-link dark-grey-font links-link"
-                >
-                  <p>
-                    https://www.tierspital.uzh.ch/tieraerzte/weiterbildungsangebot/<i
-                      class="fa-solid fa-up-right-from-square red-font ms-2"
-                    ></i>
-                  </p>
-                </a>
-              </p>
-            </div>
-          </div>
+          <img
+            src="../assets/images/2176334, Keratitis 5.JPG"
+            class="img-fluid rounded"
+            alt="..."
+          />
         </div>
       </div>
     </section>
@@ -291,7 +275,7 @@
           <!-- Logo -->
           <img
             class="img-fluid bg-light rounded mt-3 mt-sm-4 mt-md-5 mt-lg-4 ms-md-4 ms-lg-5"
-            src="./assets/images/test_logo_small.svg"
+            src="../assets/images/test_logo_small.svg"
             alt="SAVO logo small."
           />
         </div>
@@ -306,22 +290,22 @@
               <a
                 class="nav-link color-off-white text-start footer-nav"
                 aria-current="page"
-                href="./index.html"
+                href="./index-en.html"
               >
                 Home
               </a>
             </li>
 
-            <!-- Mitglieder -->
+            <!-- Members -->
             <li class="nav-item">
               <a
                 class="nav-link color-off-white text-start footer-nav"
-                href="./members.html"
-                >Mitglieder
+                href="./members-en.html"
+                >Members
               </a>
             </li>
 
-            <!-- Informationen dropdown -->
+            <!-- information dropdown -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle color-off-white text-start footer-nav"
@@ -330,30 +314,28 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Informationen
+                Information
               </a>
               <ul class="dropdown-menu dropdown-widen-footer">
                 <li>
                   <a
                     class="dropdown-item header-nav text-wrap"
-                    href="./info-pet-owner.html"
-                    >... für Tierhalter/innen<i
-                      class="bi bi-arrow-right ps-2"
-                    ></i
+                    href="./info-pet-owner-en.html"
+                    >... for pet owners<i class="bi bi-arrow-right ps-2"></i
                   ></a>
                 </li>
                 <li>
                   <a
                     class="dropdown-item header-nav text-wrap"
-                    href="./info-breeders.html"
-                    >... für Züchter/innen<i class="bi bi-arrow-right ps-2"></i
+                    href="./info-breeders-en.html"
+                    >... for breeders<i class="bi bi-arrow-right ps-2"></i
                   ></a>
                 </li>
                 <li>
                   <a
                     class="dropdown-item header-nav text-wrap"
-                    href="./info-supervising-vets.html"
-                    >... für überweisende Tierärzte/Tierärztinnen<i
+                    href="./info-supervising-vets-en.html"
+                    >... for referring veterinarians<i
                       class="bi bi-arrow-right ps-2"
                     ></i
                   ></a>
@@ -368,26 +350,31 @@
           class="col-6 col-sm-4 col-lg-3 pt-4 pb-2 order-2 order-sm-3 footer-text-cst"
         >
           <ul class="row nav">
+            <!-- Events & Médias -->
             <li class="nav-item">
               <a
                 class="nav-link color-off-white text-star footer-nav active-footer"
                 href="#"
               >
-                Events &amp; Medien
+                Events &amp; Media
               </a>
             </li>
+
+            <!-- Links -->
             <li class="nav-item">
               <a
                 class="nav-link color-off-white text-start footer-nav"
-                href="./links.html"
+                href="./links-en.html"
                 >Links
               </a>
             </li>
+
+            <!-- Contact -->
             <li class="nav-item">
               <a
                 class="nav-link color-off-white text-start footer-nav"
-                href="./contact.html"
-                >Kontakt
+                href="./contact-en.html"
+                >Contact
               </a>
             </li>
           </ul>
@@ -415,14 +402,14 @@
         >
           <div class="row">
             <div class="col-12 col-sm-6 col-lg-12">
-              <!-- Impressum placeholder -->
+              <!-- Imprint placeholder -->
               <p class="pt-5 pt-lg-4">
                 <span class="footer-nav"></span>
               </p>
             </div>
             <div class="col-12 col-sm-6 col-lg-12">
               <p class="pt-1 pt-sm-5 pt-lg-3">
-                <span class="footer-nav">Datenschutzerklärung</span>
+                <span class="footer-nav">Privacy policy</span>
               </p>
             </div>
           </div>
@@ -434,12 +421,6 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/e26a309e14.js"
       crossorigin="anonymous"
     ></script>
   </body>

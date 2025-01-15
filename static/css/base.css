@@ -126,7 +126,8 @@
 .accordion-header,
 .accordion-link,
 label,
-.link-title {
+.link-title,
+.event-title {
   font-family: "Montserrat", sans-serif !important;
 }
 
@@ -161,6 +162,10 @@ li::marker {
 
 .dropdown-widen-footer {
   width: 175%;
+}
+
+.event-card-body {
+  border-color: #333333 !important;
 }
 
 /* Links */
