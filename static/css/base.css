@@ -127,7 +127,8 @@
 .accordion-link,
 label,
 .link-title,
-.event-title {
+.event-title,
+.imprint-title {
   font-family: "Montserrat", sans-serif !important;
 }
 
