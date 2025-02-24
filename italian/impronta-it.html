@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="de">
   <head>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta charset="UTF-8" />
@@ -16,7 +16,7 @@
     <!-- Link to CSS -->
     <link rel="stylesheet" href="../static/css/base.css" />
 
-    <title>SAVO Infoformation per i veterinari di riferimento</title>
+    <title>SAVO Impronta</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -31,25 +31,25 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+
     <!-- Favicon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="../assets/favicon/apple-touch-icon.png"
+      href="./assets/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../assets/favicon/favicon-32x32.png"
+      href="./assets/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="../assets/favicon/favicon-16x16.png"
+      href="./assets/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
   </head>
 
   <body id="body-colors-custom">
@@ -100,23 +100,23 @@
                     >
                   </li>
 
-                  <!-- Mitglieder -->
+                  <!-- Members -->
                   <li class="nav-item ps-lg-3 ps-xl-2">
                     <a class="nav-link header-nav" href="./members-it.html"
-                      >Membri</a
+                      >Members</a
                     >
                   </li>
 
-                  <!-- Informationen dropdown -->
+                  <!-- information dropdown -->
                   <li class="nav-item ps-lg-3 ps-xl-2 dropdown">
                     <a
-                      class="nav-link dropdown-toggle header-nav active"
+                      class="nav-link dropdown-toggle header-nav"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      Informazioni
+                      Information
                     </a>
                     <ul class="dropdown-menu dropdown-widen">
                       <li>
@@ -132,13 +132,14 @@
                         <a
                           class="dropdown-item header-nav text-wrap"
                           href="./info-breeders-it.html"
-                          >... per gli allevatori<i
-                            class="bi bi-arrow-right ps-2"
-                          ></i
+                          >... per gli allevatori
+                          <i class="bi bi-arrow-right ps-2"></i
                         ></a>
                       </li>
                       <li>
-                        <a class="dropdown-item header-nav active" href="#"
+                        <a
+                          class="dropdown-item header-nav text-wrap"
+                          href="./info-supervising-vets-it.html"
                           >... per i veterinari di riferimento<i
                             class="bi bi-arrow-right ps-2"
                           ></i
@@ -147,12 +148,12 @@
                     </ul>
                   </li>
 
-                  <!-- Events & Medien -->
+                  <!-- Events & Media -->
                   <li class="nav-item ps-lg-3 ps-xl-2">
                     <a
                       class="nav-link header-nav"
                       href="./events-and-media-it.html"
-                      >Eventi e Media</a
+                      >Events &amp; Media</a
                     >
                   </li>
 
@@ -160,19 +161,19 @@
                   <li class="nav-item ps-lg-3 ps-xl-2">
                     <a
                       class="nav-link header-nav"
-                      href="./Links-it.html"
+                      href="./links-it.html"
                       aria-disabled="true"
-                      >Link</a
+                      >Links</a
                     >
                   </li>
 
-                  <!-- Kontakt -->
+                  <!-- Contact -->
                   <li class="nav-item ps-lg-3 ps-xl-2">
                     <a
                       class="nav-link header-nav"
                       aria-disabled="true"
                       href="./contact-it.html"
-                      >Contatti</a
+                      >Contact</a
                     >
                   </li>
 
@@ -191,21 +192,21 @@
                       <li>
                         <a
                           class="dropdown-item header-nav text-wrap"
-                          href="../info-supervising-vets.html"
+                          href="../impressum.html"
                           >DE</a
                         >
                       </li>
                       <li>
                         <a
                           class="dropdown-item header-nav text-wrap"
-                          href="../english/info-supervising-vets-en.html"
+                          href="../english/imprint-en.html"
                           >EN</a
                         >
                       </li>
                       <li>
                         <a
                           class="dropdown-item header-nav text-wrap"
-                          href="../french/info-supervising-vets-fr.html"
+                          href="../french/imprimer-fr.html"
                           >FR</a
                         >
                       </li>
@@ -220,210 +221,61 @@
     </header>
 
     <!-- Main Content -->
+
+    <!-- Imprint -->
     <section class="contanier-fluid main-content-area">
       <!-- Title -->
       <div class="row rounded-top mb-2">
         <div class="col-12 px-0">
           <h1 class="page-title-font mb-5 red-font text-center pt-1">
-            Information per i veterinari di riferimento
+            Impronta
           </h1>
         </div>
       </div>
 
-      <!-- Info Accordion -->
-      <div class="row mt-3">
-        <div class="col-12">
-          <div class="accordion" id="accordion">
-            <!-- Accordion Item 1 -->
-            <div class="accordion-item testing-two mt-3">
-              <!-- Title/Button -->
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button color-off-white light-grey-bg"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  <div class="col-11">
-                    <h5 class="mb-0">Trattamenti di emergenza</h5>
-                  </div>
-                  <div class="testing col-1">
-                    <i
-                      class="fa-solid fa-circle-chevron-down accordion-icon"
-                    ></i>
-                  </div>
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordion-1"
-              >
-                <!-- Accordian content -->
-                <div class="accordion-body light-red-bg">
-                  <p>
-                    <i class="fa-solid fa-caret-right pe-2"></i>
-                    <span class="red-font accordion-link">Analgesia:</span>
-                    somministrazione orale o parenterale di FANS o oppioidi per
-                    il dolore.
-                  </p>
+      <div class="row">
+        <!-- Imprint Text -->
+        <div class="col-12 pe-lg-3 pb-lg-5 auto-margin">
+          <p>
+            Redattore responsabile del sito web SAVO:</br>
+            Dr. med.vet. Anja Suter
+          </p>
 
-                  <p>
-                    <i class="fa-solid fa-caret-right pe-2"></i>
-                    Applicazione di un collare elisabettiano per evitare
-                    ulteriori danni, soprattutto da parte dell'animale stesso.
-                  </p>
-                  <p>
-                    <i class="fa-solid fa-caret-right pe-2"></i>
-                    Idratazione della superficie oculare con sostituti lacrimali
-                    o soluzione di NaCl.
-                  </p>
-                  <p>
-                    <i class="fa-solid fa-caret-right pe-2"></i>
-                    <span class="red-font accordion-link"
-                      >Lesioni alle palpebre:</span
-                    >
-                    devono essere trattate chirurgicamente entro 2-3 giorni,
-                    poiché le cicatrici possono avere un effetto negativo sul
-                    film lacrimale e quindi sulla superficie dell'occhio.
-                  </p>
-                  <p>
-                    <i class="fa-solid fa-caret-right pe-2"></i>
-                    <span class="red-font accordion-link"
-                      >Lesioni corneali perforanti:</span
-                    >
-                    devono essere trattate tramite microchirurgia il prima
-                    possibile. L'ipotonia causata dal deflusso dell'umor acqueo
-                    può causare il distacco della retina e altre complicazioni
-                    che possono portare alla cecità.
-                  </p>
-                  <p>
-                    <i class="fa-solid fa-caret-right pe-2"></i>
-                    <span class="red-font accordion-link"
-                      >Prolasso bulbare:</span
-                    >
-                    deve essere trattato il prima possibile con un intervento
-                    chirurgico (riposizionamento del globo e tarsorrafia). Nel
-                    frattempo, è necessaria un'umidificazione ad alta frequenza
-                    della cornea.
-                  </p>
-                  <p class="mb-0">
-                    <i class="fa-solid fa-caret-right pe-2"></i>
-                    <span class="red-font accordion-link"
-                      >Aumento acuto della pressione intraoculare:</span
-                    >
-                    deve essere studiato e trattato il prima possibile per
-                    determinare la possibile causa, poiché può verificarsi una
-                    perdita irreversibile della vista.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <!--Disclaimer-->
+          <h5 class="imprint-title pt-3 red-font">Esclusione di responsabilità</h5>
+          <p class="pt-3">
+            Questo sito web è stato redatto con la massima cura. Tuttavia, l'editore non si assume alcuna responsabilità per la completezza, l'attualità e l'accuratezza delle informazioni fornite. Non si assume alcuna responsabilità per eventuali svantaggi o danni diretti o indiretti derivanti dall'uso di questo sito web. La responsabilità dell'editore per il contenuto di www.savo-tieraerzte.ch è limitata al dolo e alla colpa grave.
+          </p>
+          <p>
+            Ci riserviamo il diritto di modificare, integrare o rimuovere le informazioni fornite senza preavviso. Si declina ogni responsabilità per modifiche non autorizzate al contenuto da parte di terzi.
+          </p>
+          <p>
+            Link a siti web esterni di altri editori: l'editore di questo sito web non si assume alcuna responsabilità per il contenuto dei siti web esterni. La responsabilità è dell'editore del rispettivo sito web esterno. Al momento della creazione dei link, le pagine collegate sono state attentamente controllate e non sono stati trovati contenuti illegali. L'editore di www.savo-tieraerzte.ch non ha alcuna influenza sulle successive modifiche dei contenuti dei siti web esterni.
+          </p>
+          <p>
+            Il contenuto di questo sito web è solo a scopo informativo. Le informazioni fornite non sostituiscono la consulenza professionale di veterinari o oftalmologi.
+          </p>
 
-            <!-- Accordion Item 2 -->
-            <div class="accordion-item testing-two mt-3">
-              <!-- Title/Button -->
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button color-off-white light-grey-bg"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="true"
-                  aria-controls="collapseTwo"
-                >
-                  <div class="col-11">
-                    <h5 class="mb-0">Contatti</h5>
-                  </div>
-                  <div class="testing col-1">
-                    <i
-                      class="fa-solid fa-circle-chevron-down accordion-icon"
-                    ></i>
-                  </div>
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordion-1"
-              >
-                <!-- Accordian content -->
-                <div class="accordion-body light-red-bg">
-                  <p>
-                    <i class="fa-solid fa-caret-right pe-2"></i>
-                    <span class="fw-medium">
-                      <a
-                        class="accordion-link text-link"
-                        href="./members-it.html"
-                      >
-                        MEMBRI
-                      </a>
-                    </span>
-                    e cliniche
-                  </p>
-                  <p class="mb-0">
-                    <i class="fa-solid fa-caret-right pe-2"></i>
-                    <span class="fw-medium dark-grey-font"
-                      >Cavalli e animali da reddito:</span
-                    >
-                    I membri che trattano anche animali di grossa taglia si
-                    trovano anche alla voce
-                    <span class="fw-medium">
-                      <a
-                        class="accordion-link text-link"
-                        href="./members-it.html"
-                      >
-                        MEMBRI.
-                      </a>
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
+          <!-- Copyright and trademark law -->
+          <h5 class="imprint-title pt-3 red-font">Diritti d'autore e di etichettatura</h5>
+          <p class="pt-3">
+            L'editore si impegna a rispettare i diritti d'autore di immagini, grafici, documenti sonori, sequenze video e testi utilizzati. Il diritto d'autore per gli oggetti pubblicati creati dall'editore stesso (come testi, immagini, grafici e layout del sito web) rimane esclusivamente dell'editore. La riproduzione o l'utilizzo di tali immagini, grafici, testi o layout in altre pubblicazioni elettroniche o stampate non è consentita senza il consenso scritto dell'autore.
+          </p>
 
-            <!-- Accordion Item 3 -->
-            <div class="accordion-item testing-two mt-3">
-              <!-- Title/Button -->
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button color-off-white light-grey-bg"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="true"
-                  aria-controls="collapseThree"
-                >
-                  <div class="col-11">
-                    <h5 class="mb-0">Notte e weekend</h5>
-                  </div>
-                  <div class="testing col-1">
-                    <i
-                      class="fa-solid fa-circle-chevron-down accordion-icon"
-                    ></i>
-                  </div>
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordion-1"
-              >
-                <!-- Accordian content -->
-                <div class="accordion-body light-red-bg">
-                  <p class="mb-0">
-                    <i class="fa-solid fa-caret-right pe-2"></i>
-                    Il servizio di emergenza dell'Ospedale veterinario di Zurigo
-                    è disponibile 24 ore su 24. Il reparto di oftalmologia offre
-                    assistenza e continua a curare i pazienti ricoverati il
-                    giorno successivo. Il sabato e la domenica un oftalmologo è
-                    disponibile su chiamata durante il giorno.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- Data protection -->
+          <h5 class="imprint-title pt-3 red-font">Protezione dei dati</h5>
+          <p class="pt-3">
+            Se viene data la possibilità di inserire dati personali o aziendali (indirizzi e-mail, nome, indirizzi), l'inserimento di questi dati avviene volontariamente. L'utilizzo e il pagamento di tutti i servizi offerti è consentito - per quanto tecnicamente possibile e ragionevole - anche senza fornire tali dati o fornendo dati anonimi o uno pseudonimo.
+          </p>
+          <p>
+            Non è consentito l'utilizzo di dati di contatto come indirizzi postali, numeri di telefono e fax e indirizzi e-mail pubblicati nell'imprinting o informazioni analoghe da parte di terzi per l'invio di informazioni non espressamente richieste.Ci riserviamo espressamente il diritto di intraprendere azioni legali contro i mittenti delle cosiddette e-mail di spam in caso di violazione di questo divieto.
+          </p>
+
+          <!-- Legal validity of this disclaimer -->
+          <h5 class="imprint-title pt-3 red-font">Validità legale del presente disclaimer</h5>
+          <p class="pt-3">
+            La presente clausola di esclusione della responsabilità è da considerarsi parte integrante della pubblicazione internet da cui siete stati indirizzati. Se sezioni o singoli termini di questa dichiarazione non sono legali o corretti, il contenuto o la validità delle altre parti non sono influenzati da questo fatto.
+          </p>
         </div>
       </div>
     </section>
@@ -459,7 +311,7 @@
               </a>
             </li>
 
-            <!-- Mitglieder -->
+            <!-- Members -->
             <li class="nav-item">
               <a
                 class="nav-link color-off-white text-start footer-nav"
@@ -468,10 +320,10 @@
               </a>
             </li>
 
-            <!-- Informationen dropdown -->
+            <!-- information dropdown -->
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle color-off-white text-start footer-nav active-footer"
+                class="nav-link dropdown-toggle color-off-white text-start footer-nav"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -497,7 +349,9 @@
                   ></a>
                 </li>
                 <li>
-                  <a class="dropdown-item header-nav active" href="#"
+                  <a
+                    class="dropdown-item header-nav text-wrap"
+                    href="./info-supervising-vets-it.html"
                     >... per i veterinari di riferimento<i
                       class="bi bi-arrow-right ps-2"
                     ></i
@@ -513,6 +367,7 @@
           class="col-6 col-sm-4 col-lg-3 pt-4 pb-2 order-2 order-sm-3 footer-text-cst"
         >
           <ul class="row nav">
+            <!-- Events & Médias -->
             <li class="nav-item">
               <a
                 class="nav-link color-off-white text-star footer-nav"
@@ -521,6 +376,8 @@
                 Eventi e Media
               </a>
             </li>
+
+            <!-- Links -->
             <li class="nav-item">
               <a
                 class="nav-link color-off-white text-start footer-nav"
@@ -528,6 +385,8 @@
                 >Link
               </a>
             </li>
+
+            <!-- Contact -->
             <li class="nav-item">
               <a
                 class="nav-link color-off-white text-start footer-nav"
@@ -566,9 +425,9 @@
               </p>
             </div>
             <div class="col-12 col-sm-6 col-lg-12">
-              <a class="footer-nav-link" href="./impronta-it.html">
+              <a class="footer-nav-link" href="#">
                 <p class="pt-1 pt-sm-5 pt-lg-3">
-                  <span class="footer-nav">Impronta</span>
+                  <span class="footer-nav active-footer">Impronta</span>
                 </p>
               </a>
             </div>
@@ -583,14 +442,5 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/e26a309e14.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Custom JS -->
-    <script src="../static/js/accordion-button-reaction.js"></script>
   </body>
 </html>
