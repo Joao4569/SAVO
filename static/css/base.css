@@ -11,6 +11,11 @@
   font-size: 2.8rem !important;
 }
 
+.members-secondary-title-font {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem !important;
+}
+
 .red-font {
   color: #c71a1a !important;
 }
