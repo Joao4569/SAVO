@@ -145,6 +145,13 @@ li::marker {
   font-size: 1.5rem;
 }
 
+/* Members section */
+
+.checklist-icon {
+  margin-bottom: 0;
+  margin-top: 7px;
+}
+
 /* Footer */
 
 .icons {
