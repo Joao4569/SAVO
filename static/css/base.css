@@ -20,6 +20,10 @@
   color: #c71a1a !important;
 }
 
+.times {
+  font-size: 0.8rem !important;
+}
+
 #body-colors-custom {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
