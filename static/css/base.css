@@ -190,6 +190,11 @@ li::marker {
   color: #c71a1a !important;
 }
 
+.links-thumbnail:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
 /* Media queries */
 
 /* 576px or less */
