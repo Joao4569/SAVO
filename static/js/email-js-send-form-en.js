@@ -26,13 +26,13 @@ window.onload = function () {
           showModal(
             "An error occurred while sending your message. " +
               "Please try sending your message directly to info@suter.vet",
-            "Ooops something went wrong..."
+            "Ooops something went wrong...",
           );
 
           // Hide the spinner
           spinner.style.display = "none";
           submitText.style.display = "inline";
-        }
+        },
       );
     });
 
@@ -44,7 +44,7 @@ window.onload = function () {
     responseMessage.textContent = message;
 
     const responseModal = new bootstrap.Modal(
-      document.getElementById("modal-test")
+      document.getElementById("modal-test"),
     );
     responseModal.show();
   }
